@@ -1,13 +1,12 @@
 import React from "react";
 import "./Section.css";
 import 'bootstrap/dist/css/bootstrap.min.css';
-import { Button } from "react-bootstrap";
 
 
 function Secao() {
   return (
     <section className="section-one">
-      <div className="info">
+      <div className="info outline-yellow-500 outline-dotted outline-8 rounded-full">
         <h1>Conexões que transformam carreiras!</h1>
         <h3>
           Comunidade freelancer para desenvolvedores brasileiros, que usa a
