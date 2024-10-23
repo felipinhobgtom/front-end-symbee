@@ -19,7 +19,7 @@ function Secao() {
           href="#"
           role="button"
           style={{display: 'flex', alignItems: 'center', justifyContent: 'center', flexDirection: 'column', height: '65px', borderRadius: '0 20px 0 20px'}}
-          >Button <i class="fa-solid fa-arrow-right"></i>
+          >Conhecer agora! <i class="fa-solid fa-arrow-right"></i>
           </a>
       </div>
       <div className="image">
