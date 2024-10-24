@@ -10,7 +10,7 @@ body {
 
 /* Estilo do header */
 .header {
-    background-image: linear-gradient(to right, #ee9b11, #d88d10, #c37e0e, #ae710d, #99630b);
+    background-color: transparent;
   padding: 10px 20px;
 }
 
