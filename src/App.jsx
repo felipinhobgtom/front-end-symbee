@@ -6,7 +6,6 @@ function App() {
   
   return(
     <>
-    <p>Nav</p>
     <Secao />
     <Section4 />
     </>
