@@ -1,5 +1,6 @@
 import './App.css'
 import Secao from './components/Section/Section';
+import Section4 from './components/Section 4/Section4';
 
 function App() {
   
@@ -7,7 +8,7 @@ function App() {
     <>
     <p>Nav</p>
     <Secao />
-    {/* <Secao /> */}
+    <Section4 />
     </>
   )
 }
