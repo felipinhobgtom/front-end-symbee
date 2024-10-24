@@ -36,6 +36,7 @@
 
 .section-four .text h1{
     color: #EE9B11;
+    font-weight: 600;
 }
 
 .section-four .text h3{
@@ -47,6 +48,7 @@
     display: flex;
     flex-direction: column;
     text-align: center;
+    position: relative;
     height: 100%;
     width: 400px;
     gap: 10px;
@@ -54,6 +56,7 @@
 
 .what-we-want h1{
     color: #EE9B11;
+    font-weight: 600;
 }
 
 .what-we-want h3{
@@ -66,4 +69,18 @@
     content: url(./public/arrow.png);
     top: 45%;
     left: 30%;
+}
+
+.objective::after{
+    position: absolute;
+    content: url(./public/arrow_2.png);
+    bottom: 320px;
+    left: 760px;
+}
+
+.section-four .what-we-want::before{
+    position: absolute;
+    content: url(./public/arrow_3.png);
+    top: 100px;
+    right: 350px;
 }
