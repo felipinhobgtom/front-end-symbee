@@ -7,6 +7,7 @@ function App() {
     <>
     <p>Nav</p>
     <Secao />
+    {/* <Secao /> */}
     </>
   )
 }
