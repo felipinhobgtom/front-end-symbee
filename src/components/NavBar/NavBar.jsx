@@ -1,15 +1,15 @@
 import React from "react";
-import "./header.css";
- import LogoHeader from '/img/LogoHeader.png'; // importando foto do logo
+import "./NavBar.css";
+ import LogoNav from './img/LogoNav.png'; // importando foto do logo
 
-const Header = () => {
+const NavBar = () => {
   return (
     <>
       <header className="header">
         <nav className="navbar">
           <div className="logoEnome">
             <div className="imageLogo">
-              <img src={LogoHeader} alt="Logo da SymBee" />
+              <img src={LogoNav} alt="Logo da SymBee" />
             </div>
             <div className="navbar-brand">Symbee</div>
           </div>
@@ -42,4 +42,4 @@ const Header = () => {
   );
 };
 
-export default Header;
+export default NavBar;

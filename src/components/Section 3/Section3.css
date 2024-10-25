@@ -1,7 +1,6 @@
 .section-three{
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
     align-items: center;
     height: 100vh;
     width: 100%;
@@ -40,10 +39,12 @@
     border: 5px solid #EE911B;
     box-shadow: 0 5px 15px rgba(0,0,0,0.2);
     border-radius: 50%;
+    
 
     & h2{
         font-size: 18px;
         font-weight: 600;
         color: #1E1D1D;
     }
+
 }

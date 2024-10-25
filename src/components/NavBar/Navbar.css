@@ -10,7 +10,7 @@ body {
 
 /* Estilo do header */
 .header {
-    background-color: transparent;
+  background-color: transparent;
   padding: 10px 20px;
 }
 
@@ -65,11 +65,10 @@ body {
 
 /* Estilo específico para o botão "Entrar" */
 .btn-entrar {
-  background-color: transparent ;
+  background-color: transparent;
   border: 2px solid #3b1e0b;
   border-radius: 5px;
   color: #3b1e0b;
-
 }
 
 /* Estilo específico para o botão "Registrar" */
@@ -79,30 +78,28 @@ body {
   border-radius: 5px;
 }
 
-
 /*Estilo especifico para o logo*/
 .logoEnome {
-display: flex;
-align-items: center;
-gap: 10px;
-
+  display: flex;
+  align-items: center;
+  gap: 10px;
 }
 
-/* Defininddo dimensão para a imagem do logo */ 
-.imageLogo img{
-    width: 25px;
-    height: 30px;
+/* Defininddo dimensão para a imagem do logo */
+.imageLogo img {
+  width: 25px;
+  height: 30px;
 }
 
 /* Definindo animações  */
-.btn-entrar:hover ,.btn-registrar:hover {
-    background-color: #ee9b11;
-    transition: all ease-in-out 0.2s;
-    box-shadow: 0px 0px 9px 1px white;
+.btn-entrar:hover,
+.btn-registrar:hover {
+  background-color: #ee9b11;
+  transition: all ease-in-out 0.2s;
+  box-shadow: 0px 0px 9px 1px white;
 }
 
-.navbar-links a:hover{
+.navbar-links a:hover {
   color: #fff;
   transition: all ease-in-out 0.2s;
 }
-

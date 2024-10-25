@@ -11,7 +11,7 @@ body::-webkit-scrollbar{
   display: none;
 }
 
-.footerSection{
+.headerSection{
   background: rgb(238, 155, 17);
   background: linear-gradient(
     122deg,
