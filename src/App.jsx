@@ -4,6 +4,7 @@ import Footer from './components/footer/Footer';
 import Header from "./components/header/Header"; // Certifique-se de que o caminho está correto
 import Secao from './components/Section/Section';
 import Section4 from './components/Section 4/Section4';
+import Section3 from './components/Section 3/Section3';
 
 function App() {
   return (
@@ -12,6 +13,7 @@ function App() {
       <Header />
       <Secao />
     </main>
+    <Section3 />
     <Section4 />
     <Footer/>
     </>
