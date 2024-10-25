@@ -10,6 +10,13 @@
 .section-four .liquify{
     position: relative;
     bottom: 8px;
+}
+
+  .section-four .liquify::after{
+    position: absolute;
+    content: url(./public/caminho.png);
+    bottom: -150px;
+    left: 15%;
   }
 
 .section-four .main-content{
