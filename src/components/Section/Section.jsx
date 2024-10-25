@@ -1,13 +1,12 @@
 import React from "react";
 import "./Section.css";
 import 'bootstrap/dist/css/bootstrap.min.css';
-import { Button } from "react-bootstrap";
 
 
 function Secao() {
   return (
     <section className="section-one">
-      <div className="info">
+      <div className="info outline-dotted outline-8 rounded-full">
         <h1>Conexões que transformam carreiras!</h1>
         <h3>
           Comunidade freelancer para desenvolvedores brasileiros, que usa a
@@ -19,7 +18,7 @@ function Secao() {
           href="#"
           role="button"
           style={{display: 'flex', alignItems: 'center', justifyContent: 'center', flexDirection: 'column', height: '65px', borderRadius: '0 20px 0 20px'}}
-          >Button <i class="fa-solid fa-arrow-right"></i>
+          >Conhecer agora! <i class="fa-solid fa-arrow-right"></i>
           </a>
       </div>
       <div className="image">
