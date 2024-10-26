@@ -10,9 +10,11 @@ body {
 
 /* Estilo do header */
 .header {
-    background-color: transparent;
+  background-color: #ee9b11;
   padding: 10px 20px;
 }
+
+
 
 /* Estilo da navbar */
 .navbar {
