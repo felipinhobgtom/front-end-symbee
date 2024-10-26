@@ -1,5 +1,7 @@
 .section-four{
     display: flex;
+    position: relative;
+    z-index: 1;
     flex-direction: column;
     align-items: center;
     justify-content: center;
@@ -15,8 +17,8 @@
   .section-four .liquify::after{
     position: absolute;
     content: url(./public/caminho.png);
-    bottom: -150px;
-    left: 15%;
+    bottom: -230px;
+    left: 20px;
   }
 
 .section-four .main-content{
