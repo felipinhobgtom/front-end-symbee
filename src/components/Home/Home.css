@@ -1,0 +1,67 @@
+.home-page {
+  display: flex;
+  justify-content: space-around;
+  margin: auto;
+
+  & .left-side {
+    display: flex;
+    flex-direction: column;
+    padding: 3rem 2rem;
+    background: red;
+    border-radius: 2%;
+    max-width: 700px;
+    justify-content: center;
+    align-items: center;
+    gap: 1.5rem;
+
+    & .acquire-premium {
+      font-weight: 700;
+    }
+
+    & .hierarchy {
+      padding: 2rem;
+      text-decoration: none;
+      border-radius: 20px;
+
+      & span {
+        background-image: linear-gradient(
+          90deg,
+          rgba(234, 234, 234, 1) 0%,
+          rgba(249, 213, 4, 1) 100%
+        );
+        background-size: 100%;
+        background-repeat: repeat;
+        font-weight: 700;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        -moz-background-clip: text;
+      }
+    }
+
+    & .profile {
+      display: flex;
+      align-items: center;
+      /* justify-content: center; */
+
+      & .profile-picture {
+        width: 100px;
+        height: 100px;
+        border-radius: 50%;
+        border: 2px solid #000;
+      }
+
+      & .profile-info {
+        & #nivel {
+            border: 2px solid #000;
+            padding: 10px;
+        }
+      }
+
+      & .progress-bar {
+        width: 100%;
+        height: 15px;
+        border: 2px solid #000;
+      }
+    }
+  }
+}
