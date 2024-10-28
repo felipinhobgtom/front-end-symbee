@@ -1,4 +1,10 @@
+import './App.css'
 import React from "react";
+import Secao from './components/Section/Section';
+import Section2 from './components/Section 2/Section2';
+import Section3 from './components/Section 3/Section3';
+import Section4 from './components/Section 4/Section4';
+import Home from './components/Home/Home';
 import "./App.css"; // Importando estilos do App, se houver
 import Login from "./components/Login/Login";
 import { Outlet } from "react-router-dom";
@@ -20,11 +26,16 @@ function App() {
   // }; utilizado para o componet fotos
   return (
     <>
-      <div>
+    <Secao />
+    <Section2 />
+    <Section3 />
+    <Section4 />
+    {/* <Home /> */}
+      {/* <div>
         <NavBar />
         <FimJornada/>
-        {/* <Foto onFileUpload={handleFileUpload} /> */}
-      </div>
+        <Foto onFileUpload={handleFileUpload} />
+      </div> */}
     </>
   );
 }

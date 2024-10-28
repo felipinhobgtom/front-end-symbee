@@ -4,9 +4,9 @@ import "./Section4.css";
 function Section4() {
   return (
     <section className="section-four">
-        <div className="liquify">
-            <img src="./public/liquify.svg" alt="" srcset="" />
-        </div>
+      <div className="liquify">
+        <img src="./public/liquify.svg" alt="" srcset="" />
+      </div>
       <div className="main-content">
         <div className="objective">
           <div className="text">
@@ -16,13 +16,6 @@ function Section4() {
               detalhada!
             </h3>
           </div>
-
-          <img
-            src="./public/molde.png"
-            alt="Abelhas realizando a simbiose!"
-            width={"40%"}
-            style={{ borderRadius: "50%" }}
-          />
         </div>
         <div className="what-we-want">
           <h1>Qual o nosso impacto?</h1>
@@ -30,7 +23,6 @@ function Section4() {
             Transformar vidas e gerar oportunidades, por meio da plataforma
             SymBee!
           </h3>
-          <img src="./public/we want you.png" alt="Precisamos de você!" />
         </div>
       </div>
     </section>

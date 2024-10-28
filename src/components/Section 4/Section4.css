@@ -1,22 +1,23 @@
 .section-four{
     display: flex;
+    position: relative;
+    z-index: 1;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
+    justify-content: space-between;
     height: 100vh;
     background: linear-gradient(90deg, #160942 0%, #3817A8 100%);
 }
 
 .section-four .liquify{
     position: relative;
-    bottom: 8px;
 }
 
   .section-four .liquify::after{
     position: absolute;
     content: url(./public/caminho.png);
-    bottom: -150px;
-    left: 15%;
+    bottom: -230px;
+    left: 20px;
   }
 
 .section-four .main-content{
@@ -36,7 +37,6 @@
 .section-four .text{
     display: flex;
     flex-direction: column;
-    gap: 5%;
     text-align: center;
     width: 500px;
 }
@@ -55,10 +55,9 @@
     display: flex;
     flex-direction: column;
     text-align: center;
+    justify-content: center;
     position: relative;
-    height: 100%;
-    width: 400px;
-    gap: 10px;
+    max-width: 100%;
 }
 
 .what-we-want h1{
@@ -69,25 +68,4 @@
 .what-we-want h3{
     color: #EAEAEA;
     font-weight: 300;
-}
-
-.objective::before{
-    position: absolute;
-    content: url(./public/arrow.png);
-    top: 45%;
-    left: 30%;
-}
-
-.objective::after{
-    position: absolute;
-    content: url(./public/arrow_2.png);
-    bottom: 320px;
-    left: 760px;
-}
-
-.section-four .what-we-want::before{
-    position: absolute;
-    content: url(./public/arrow_3.png);
-    top: 100px;
-    right: 350px;
 }

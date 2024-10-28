@@ -1,0 +1,52 @@
+.section-two{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    background: linear-gradient(70deg, #F9D504 0%, #EE911B  100%);
+
+    & .liquify-section2{
+        position: relative;
+        z-index: 1;
+    }
+
+    & .info{
+        display: flex;
+        justify-content: space-around;
+        width: 100%;
+    }
+
+    & .info .broche{
+        display: flex;
+        position: relative;
+        z-index: 1;
+    }
+
+    & .info .broche::after{
+        position: absolute;
+        content: url(./paredao.svg);
+        z-index: -1;
+        right: 3rem;
+        top: -50px;
+        filter: opacity(0.2);
+    }
+
+    & .why{
+        position: relative;
+        text-align: center;
+        max-width: 100%;
+    }
+    
+    & .why::before{
+        position: absolute;
+        content: url(./arrow-book.png);
+        top: 60%;
+        right: 70%;
+        transform: rotate(30deg);
+    }
+
+    & .why .caderno{
+        position: relative;
+        left: 20%;
+    }
+}
