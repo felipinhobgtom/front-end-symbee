@@ -1,6 +1,7 @@
 import React from "react";
 import "./Section.css";
 import "bootstrap/dist/css/bootstrap.min.css";
+import { BrowserRouter, Route, Routes } from "react-router-dom";
 
 function Secao() {
   return (
@@ -15,8 +16,9 @@ function Secao() {
           <a
             name=""
             class="btn btn-primary"
-            href="#"
+            href="/Cadastro"
             role="button"
+            element
             style={{
               display: "flex",
               alignItems: "center",
