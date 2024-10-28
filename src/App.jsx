@@ -23,7 +23,7 @@ function App() {
     <>
       <div>
         <NavBarResponsiva />
-        <Cargo />
+        <Bio />
         {/* <Foto onFileUpload={handleFileUpload} /> */}
       </div>
     </>

@@ -20,7 +20,8 @@ const Cargo = () => {
             Empresa
             <div className="inputPosition">
               <input type="text" placeholder="Digite o cargo da empresa" />
-            </div> <p></p>
+            </div>{" "}
+            <p></p>
             Localização
             <div className="inputPosition">
               <input
@@ -29,14 +30,14 @@ const Cargo = () => {
               />
             </div>
             <div className="doubleInput">
-              <div className="inputProhibited">
+              <div className="inputProhibited" style={{ minWidth: "45%" }}>
                 <p>Entrada</p>
-                <div>
+                <div id="entrada">
                   {" "}
                   <input type="date" placeholder="Ano de entrada" />
                 </div>
               </div>
-              <div>
+              <div style={{ minWidth: "45%" }}>
                 <p>Saída</p>
                 <input type="date" placeholder="Ano de saída" />
                 <div className="inputExit"></div>
