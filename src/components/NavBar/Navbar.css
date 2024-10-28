@@ -10,7 +10,7 @@ body {
 
 /* Estilo do header */
 .header {
-  background-color: #ee9b11;
+  background-image: linear-gradient(to right, #e89811, #df9210, #d78c10, #ce870f, #c6810e, #be7c0d, #b6760d, #ae710c, #a56b0c, #9b650b, #925f0b, #89590a);
   padding: 10px 20px;
 }
 

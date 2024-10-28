@@ -1,0 +1,213 @@
+.PositionContainer {
+  width: 100%;
+  height: 83vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-image: radial-gradient(
+    circle,
+    #bfaf93,
+    #cbbb9c,
+    #d6c7a5,
+    #e2d3af,
+    #ede0b8
+  );
+  padding: 0.1rem;
+  position: relative;
+}
+
+.LayoutContainer {
+  display: flex;
+  flex-direction: column;
+  width: 70%;
+  align-items: center;
+  justify-content: center;
+  gap: 2vh;
+}
+
+.TitleContainer h1 {
+  width: 100%;
+  font-weight: bold;
+  text-align: center;
+  font-size: 1.5rem;
+  color: #5a4a2f;
+  border-bottom: 2px solid #9e804a;
+  
+}
+
+.ContentContainer {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2vh;
+}
+
+.InputWrapper {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.InputWrapper input,
+.InputWrapper textarea {
+  width: 100%;
+  height: 2.5rem;
+  border: none;
+  background-color: #ee9b11;
+  border-radius: 30px;
+  color: #865c17;
+  text-align: center;
+  font-size: 1rem;
+  padding: 0.5rem;
+}
+
+.CampoInput textarea {
+  resize: none;
+  height: 6rem;
+}
+
+.BotaoEmpregado {
+  display: flex;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+}
+
+.BotaoEmpregado button {
+  width: 100%;
+  height: 3rem;
+  border: 4px solid black;
+  background-color: transparent;
+  border-radius: 10px;
+  color: black;
+  font-weight: bold;
+  font-size: 1rem;
+}
+
+.BotaoEmpregado button:hover {
+  background-color: white;
+  transition: all ease-in 0.4s;
+}
+
+.BotaoEmpregado button:active {
+  background-color: black;
+  color: white;
+}
+
+.ContainerBotoes {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  padding: 1vh 0;
+  height: 8vh;
+}
+
+.ContainerBotoes button {
+  width: 15vh;
+  height: 5vh;
+  border: 4px solid #ee9b11;
+  border-radius: 30px;
+  background-color: #ee9b11;
+  color: white;
+  font-weight: bold;
+  font-size: 1.5vh;
+  cursor: pointer;
+}
+
+.BotaoVoltar button {
+  background-color: transparent;
+  color: black;
+}
+
+.BotaoContinuar button:active {
+  background-color: white;
+  color: black;
+}
+
+.BotaoVoltar button:active {
+  background-color: #ee9b11;
+  color: black;
+}
+
+.PerfilContainer::after {
+  position: absolute;
+  content: url(./public/svg/coisudo.svg);
+  left: 5%;
+  top: 20%;
+}
+
+.PerfilContainer::before {
+  position: absolute;
+  content: url(./public/svg/hexagonos.svg);
+  right: 5%;
+  top: 15%;
+  color: #d3b85e;
+  opacity: 25%;
+}
+
+.TituloBio {
+  font-size: 1.2rem;
+  color: #3D1B11;
+  font-weight: bold;
+}
+
+.Biograph{
+    width: 50%;
+    height: 50vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+
+}
+
+.Biograph p{
+    width: 80%;
+    justify-content: flex-start;
+    top: 50%;
+}
+
+.BioContainer {
+  position: relative;
+  width: 100%;
+  max-width: 600px;
+  padding: 1rem;
+}
+
+
+
+.BioTextarea {
+  width: 100%;
+  height: 30vh;
+  padding: 1rem;
+  font-size: 1rem;
+  color: #5a4a2f;
+  background-color: #C1B195;
+  border-radius: 1.5rem;
+  resize: none;
+  outline: none;
+  border: none;
+
+  background: linear-gradient(to right, #ede0b8, #e2d3af) padding-box,
+    linear-gradient(to right, #ffa500, #e6c300) border-box;
+  border: 2px solid transparent;
+  box-shadow: inset 0 0 5px rgba(0, 0, 0, 0.05);
+}
+
+.BioTextarea::placeholder {
+  color: #c0c0c0;
+  opacity: 0.8;
+}
+
+.CharCount {
+  position: absolute;
+  margin-top: 47%;
+  margin-left: -9%;
+  font-size: 0.9rem;
+  color: #5a4a2f;
+  opacity: 0.8;
+}
