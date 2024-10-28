@@ -1,71 +1,63 @@
-.section-four{
-    display: flex;
-    position: relative;
-    z-index: 1;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-between;
+.section-four {
+  display: flex;
+  position: relative;
+  z-index: 1;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
     height: 100vh;
-    background: linear-gradient(90deg, #160942 0%, #3817A8 100%);
+  background: linear-gradient(90deg, #160942 0%, #3817a8 100%);
 }
 
-.section-four .liquify{
-    position: relative;
+.section-four .main-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 10%;
+  flex-direction: row;
+  width: 100%;
+  margin: auto;
 }
 
-  .section-four .liquify::after{
-    position: absolute;
-    content: url(./public/caminho.png);
-    bottom: -230px;
-    left: 20px;
-  }
-
-.section-four .main-content{
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
-    margin: auto;
+.section-four .text {
+  display: flex;
+  text-align: center;
+  flex-direction: column;
+  max-width: 20rem;
 }
 
-.section-four .objective{
-    display: flex;
-    position: relative;
+.section-four .text h1 {
+  color: #ee9b11;
+  font-weight: 600;
+  font-size: 40px;
+
 }
 
-.section-four .text{
-    display: flex;
-    flex-direction: column;
-    text-align: center;
-    width: 500px;
+.section-four .text h3 {
+  color: #eaeaea;
+  font-weight: 300;
+  font-size: 20px;
 }
 
-.section-four .text h1{
-    color: #EE9B11;
-    font-weight: 600;
+.what-we-want {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  position: relative;
+  max-width: 20rem;
+  gap: 10px;
 }
 
-.section-four .text h3{
-    color: #EAEAEA;
-    font-weight: 300;
+.what-we-want h1 {
+  color: #ee9b11;
+  font-weight: 600;
+  font-size: 40px;
 }
 
-.what-we-want{
-    display: flex;
-    flex-direction: column;
-    text-align: center;
-    justify-content: center;
-    position: relative;
-    max-width: 100%;
-}
-
-.what-we-want h1{
-    color: #EE9B11;
-    font-weight: 600;
-}
-
-.what-we-want h3{
-    color: #EAEAEA;
-    font-weight: 300;
+.what-we-want h3 {
+  color: #eaeaea;
+  font-weight: 300;
+  font-size: 20px;
+  max-width: 100%;
 }

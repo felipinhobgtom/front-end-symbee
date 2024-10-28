@@ -19,34 +19,31 @@
     & .info .broche{
         display: flex;
         position: relative;
-        z-index: 1;
+        max-width: 100%;
+        z-index: 0;
     }
 
-    & .info .broche::after{
-        position: absolute;
+    & .info .broche::before{
+        /* position: absolute;
         content: url(./paredao.svg);
         z-index: -1;
-        right: 3rem;
-        top: -50px;
-        filter: opacity(0.2);
+        scale: 1.3;
+        top: 50%;
+        left: 50%;
+        translate: -50% -50%;
+        filter: opacity(0.2); */
     }
 
     & .why{
         position: relative;
         text-align: center;
-        max-width: 100%;
-    }
-    
-    & .why::before{
-        position: absolute;
-        content: url(./arrow-book.png);
-        top: 60%;
-        right: 70%;
-        transform: rotate(30deg);
+        max-width: 30rem;
     }
 
     & .why .caderno{
         position: relative;
         left: 20%;
     }
+
+
 }

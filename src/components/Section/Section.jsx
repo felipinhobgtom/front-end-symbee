@@ -6,7 +6,7 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 function Secao() {
   return (
     <section className="section-one">
-      <div className="info outline-dotted outline-8 rounded-full">
+      <div className="info">
         <h1>Conexões que transformam carreiras!</h1>
         <h3>
           Comunidade freelancer para desenvolvedores brasileiros, que usa a

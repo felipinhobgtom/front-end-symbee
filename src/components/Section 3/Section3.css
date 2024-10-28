@@ -1,34 +1,14 @@
 .section-three {
   display: flex;
-  position: relative;
-  z-index: 1;
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
-  height: 100vh;
-  width: 100%;
-  gap: 2%;
   background: linear-gradient(90deg, #f9d504 0%, #ee911b 100%);
-
-  & .liquify3 {
-    bottom: 17px;
-  }
 
   & h1 {
     position: relative;
     color: #3d1b11;
   }
-
-  & .lower-liquify3 {
-    
-  }
-}
-
-.section-three::after{
-    position: absolute;
-    content: url(./negocio.svg);
-    top: 40%;
-    z-index: -1;
 }
 
 .section-three .membros {
@@ -36,9 +16,13 @@
   justify-content: center;
   align-items: center;
   flex-wrap: wrap;
-  width: 1300px;
-  height: 100%;
-  gap: 5%;
+  max-width: 1200px;
+}
+
+.section-three .the-group{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .section-three .membros .cartao {
@@ -46,8 +30,8 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  width: 267px;
-  height: 267px;
+  width: 220px;
+  height: 220px;
   text-align: center;
   background-color: #eaeaea;
   border: 7px solid #ee911b;
@@ -55,8 +39,17 @@
   border-radius: 50%;
 
   & h2 {
-    font-size: 18px;
+    font-size: 14px;
     font-weight: 600;
     color: #1e1d1d;
   }
+
+  & img{
+    width: 130px;
+  }
+}
+
+.section-three #lower-liquify3 {
+  position: relative;
+  top: 9px;
 }

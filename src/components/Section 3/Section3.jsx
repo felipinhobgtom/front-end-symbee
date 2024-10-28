@@ -55,22 +55,23 @@ function Section3() {
       <div className="liquify3">
         <img src="./public/liquify-section3.svg" />
       </div>
-      <h1>
-        <strong>Quem somos nós?</strong>
-      </h1>
-      <div className="membros">
-        <h1></h1>
-        {membros.map((membros) => (
-          <Cards
-            nome={membros.nome}
-            url={membros.foto}
-            funcao={membros.funcao}
-          />
-        ))}
+      <div className="the-group">
+        <h1>
+          <strong>Quem somos nós?</strong>
+        </h1>
+        <div className="membros">
+          {membros.map((membros) => (
+            <Cards
+              nome={membros.nome}
+              url={membros.foto}
+              funcao={membros.funcao}
+            />
+          ))}
+        </div>
       </div>
       <img
         src="./public/lower-liquify-section3.svg"
-        className="lower-liquify3"
+        id="lower-liquify3"
       />
     </section>
   );

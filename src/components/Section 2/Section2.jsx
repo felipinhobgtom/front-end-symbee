@@ -5,13 +5,12 @@ function Section2() {
   return (
     <section className="section-two">
       <div className="liquify-section2">
-        <img src="./public/liquify-section2.svg" />
+        <img src="./public/liquify.svg" />
       </div>
 
       <div className="info">
         <div className="broche">
           <img src="./broche.svg" width={"100%"} height={"100%"} />
-          <img src="./arrow.svg" width={"200px"} />
         </div>
 
         <div className="why">
