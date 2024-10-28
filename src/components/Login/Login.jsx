@@ -1,8 +1,7 @@
 import React from "react";
 import "./login.css";
-import iconeGitPreto from "./img/iconeGitPreto.png";
-import iconeGoogle from "./img/iconeGoogle.png";
-import iconeLinkedin from "./img/iconeLinkedin.png";
+
+
 
 const       Login = () => {
   return (
@@ -14,7 +13,7 @@ const       Login = () => {
         </div>
         <div className="informations">
           <div className="outerInf">
-            <input type="text" placeholder="Endereço de Email " />
+            <input type="email" placeholder="Endereço de Email " />
             <input type="password" placeholder="Senha" />
           </div>
           <div className="checkbox">

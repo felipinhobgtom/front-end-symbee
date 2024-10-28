@@ -18,7 +18,7 @@ const Cadastro = () => {
             <input type="text" placeholder="Sobrenome" />
           </div>
           <div className="outerInf">
-            <input type="text" placeholder="Endereço de e-mail" />
+            <input type="email" placeholder="Endereço de e-mail" />
             <input type="text" placeholder="CPF" />
             <input type="text" placeholder="Data de nascimento" />
             <input type="password" placeholder="Senha" />

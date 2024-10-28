@@ -1,0 +1,125 @@
+.layoutchoice {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  width: 100%;
+  height: 92vh;
+  background-image: radial-gradient(
+    circle,
+    #ede5b4,
+    #efe6ab,
+    #f1e6a3,
+    #f4e79a,
+    #f6e791
+  );
+}
+
+.layoutchoice::after {
+  position: absolute;
+  content: url(./public/svg/lines.svg);
+  margin-left: 141vh;
+  margin-top: 33vh;
+  display: table;
+  clear: both;
+}
+
+.layoutchoice::before {
+  position: absolute;
+  content: url(./public/svg/coisinhos.svg);
+  margin-right: 187vh;
+  margin-bottom: -48vh;
+  display: table;
+  clear: both;
+}
+
+.contents {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  height: 100%;
+  width: 50%;
+  padding: auto;
+  gap: 2.2rem;
+}
+
+.titleChoice h1 {
+  display: flex;
+  font-size: 1.5rem;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  margin: auto;
+  width: 70%;
+  height: 100%;
+  font-weight: bold;
+}
+
+.paragraphChoice p {
+  display: flex;
+  font-weight: 300;
+  color: #877f55;
+}
+
+.choices {
+  align-items: center;
+  width: 90%;
+  height: 30%;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.choices button {
+  width: 70%;
+  height: 6vh;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  border: 3px solid black;
+  border-radius: 30px;
+  background-color: transparent;
+  color: black;
+  font-weight: 700;
+}
+
+.choices img {
+  width: 4vh;
+  height: 4vh;
+  margin-right: 1vh;
+}
+
+.choices button:hover{
+    background-color: white;
+    transition: all ease-in-out 0.4s;
+}
+
+.buttonContinueArea {
+  display: flex;
+  justify-content: right;
+  width: 100%;
+  height: 8vh;
+  background-color: white;
+  border-top: 2px solid #b6b6b6;
+}
+
+.Buttoncontinue {
+  display: flex;
+  height: 7vh;
+  width: 30vh;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.buttonContinueArea button {
+  width: 20vh;
+  height: 5vh;
+  background-color: #ee9b11;
+  color: white;
+  border: 30px;
+  font-weight: 600;
+  font-size: 1.5rem;
+  border-radius: 30px;
+}
