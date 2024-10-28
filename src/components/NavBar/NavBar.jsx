@@ -1,10 +1,15 @@
-import React from "react";
-import "./NavBar.css";
+import React, { useState } from 'react';
+import './NavBar.css';
 import { Link } from 'react-router-dom';
 import LogoNav from './img/LogoNav.png';
 
-
 const NavBar = () => {
+  const [isOpen, setIsOpen] = useState(false);
+
+  const toggleMenu = () => {
+    setIsOpen(!isOpen);
+  };
+
   return (
     <header className="header">
       <nav className="navbar">
@@ -14,26 +19,25 @@ const NavBar = () => {
           </div>
           <div className="navbar-brand">Symbee</div>
         </div>
-
-        <ul className="navbar-links">
+        <ul className={`navbar-links ${isOpen ? 'open' : ''}`}>
           <li>
-            <Link to="/">Home</Link>
+            <Link to="/" onClick={toggleMenu}>Home</Link>
           </li>
           <li>
-            <Link to="Services">Serviços</Link>
+            <Link to="Services" onClick={toggleMenu}>Serviços</Link>
           </li>
           <li>
-            <Link to="Contact">Contatos</Link>
+            <Link to="Contact" onClick={toggleMenu}>Contatos</Link>
           </li>
           <li>
-            <Link to="AboutUs">Sobre nós</Link>
+            <Link to="AboutUs" onClick={toggleMenu}>Sobre nós</Link>
           </li>
         </ul>
-
         <div className="buttons">
           <button className="btn-entrar" to="Login">Entrar</button>
           <button className="btn-registrar" to="Register">Registrar</button>
         </div>
+        
       </nav>
     </header>
   );

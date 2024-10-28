@@ -8,13 +8,13 @@
   background-color: #1e1d1d;
 }
 
-.EndPage::before {
+/* .EndPage::before {
   position: absolute;
   content: url(./public/svg/liquify.svg);
   margin-bottom: 110vh;
   display: table;
   clear: both;
-}
+} */
 
 .contentsEnd {
   width: 70%;
@@ -30,13 +30,11 @@
   gap: 2vh;
   text-align: center;
   padding: 10vh 5vh;
-  
- 
 }
 
-.titleEnd{
-    font-size: 2.5rem;
-    margin-top: 10vh;
+.titleEnd {
+  font-size: 2.5rem;
+  margin-top: 10vh;
 }
 
 .txtEnd {
@@ -51,12 +49,51 @@
 }
 
 .buttonEnd button {
-width: 30vh;
-height: 5vh;
-box-shadow: -0.5vh -0.5vh 0.1vh 0vh black;
-border-radius: 3vh;
-border: none;
-background-color: #ee9b11;
-font-weight: bold;
-font-size: 2.0vh;
+  width: 30vh;
+  height: 5vh;
+  box-shadow: -0.5vh -0.5vh 0.1vh 0vh black;
+  border-radius: 3vh;
+  border: none;
+  background-color: #ee9b11;
+  font-weight: bold;
+  font-size: 2vh;
+}
+
+/* Responsividade para diferentes tamanhos de tela */
+
+/* Telas pequenas (Ex: até 480px, celulares em retrato) */
+@media (max-width: 768px) {
+  .EndPage {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+  }
+  .contentsEnd {
+    width: 100%;
+    height: 60vh; /* Ajuste a altura conforme necessário */
+    background-size: contain; /* Ajusta o tamanho do background */
+    padding: 1vh 2vh; /* Reduz o padding para telas menores */
+    background-image: url(./img/section.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+  .img img{
+    width: 7vh;
+  }
+  .titleEnd {
+    font-size: 1rem;
+    margin-top: 10vh;
+
+  }
+
+  .txtEnd {
+    width: 60%;
+    font-size: 0.8rem;
+  }
+
+  .buttonEnd button {
+    font-size: 1.2vh;
+    height: 4vh;
+  }
 }

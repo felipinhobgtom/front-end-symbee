@@ -8,13 +8,9 @@ import iconeZap from "/img/iconeZap.png";
 const Footer = () => {
   return (
     <footer  className="footer">
-      
       <div className="FooterLogo">
         <div className="logoFooterImg">
           <img src={FooterLogo} alt="Logo Footer" />
-        </div>
-        <div className="Point">
-          <p>.</p>
         </div>
         <div className="FooterSymbee">
           <h3>Symbee</h3>
@@ -37,7 +33,7 @@ const Footer = () => {
         <div className="geral">
           <h4>Geral</h4>
           <div className="GeralLinks">
-            <a href="#">Cadastre-se</a>
+            <a href="#">Cadastre</a>
             <a href="#">Central</a>
             <a href="#">Sobre</a>
             <a href="#">Imprensa</a>

@@ -5,12 +5,6 @@
   align-items: center;
   justify-content: space-around;
   height: 100vh;
-  background: rgb(238, 155, 17);
-  background: linear-gradient(
-    99deg,
-    rgba(238, 155, 17, 1) 0%,
-    rgba(136, 89, 10, 1) 100%
-  );
 }
 
 .section-one .info {

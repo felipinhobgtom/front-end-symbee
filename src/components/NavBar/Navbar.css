@@ -10,7 +10,9 @@ body {
 
 /* Estilo do header */
 .header {
-  background-color: transparent;
+  width: 100%;
+  height: 10;
+  background-image: linear-gradient(to right, #e89811, #df9210, #d78c10, #ce870f, #c6810e, #be7c0d, #b6760d, #ae710c, #a56b0c, #9b650b, #925f0b, #89590a);
   padding: 10px 20px;
 }
 
@@ -74,11 +76,12 @@ body {
 }
 
 /* Estilo específico para o botão "Registrar" */
-.btn-registrar {
+/* .btn-registrar {
   background-color: #3b1e0b;
   border: 2px solid #3b1e0b;
   border-radius: 5px;
-}
+} */
+
 
 /*Estilo especifico para o logo*/
 .logoEnome {
@@ -94,14 +97,102 @@ body {
 }
 
 /* Definindo animações  */
-.btn-entrar:hover,
-.btn-registrar:hover {
-  background-color: #ee9b11;
-  transition: all ease-in-out 0.2s;
-  box-shadow: 0px 0px 9px 1px white;
-}
+/* .btn-entrar:hover ,.btn-registrar:hover {
+    background-color: #ee9b11;
+    transition: all ease-in-out 0.2s;
+    box-shadow: 0px 0px 9px 1px white;
+} */
 
 .navbar-links a:hover {
   color: #fff;
   transition: all ease-in-out 0.2s;
+}
+
+.hamburger {
+  display: none;
+  border: none;
+  background: none;
+  border-top: 3px solid #fff;
+  cursor: pointer;
+}
+
+.hamburger::after,
+.hamburger::before {
+  content: " ";
+  display: block;
+  width: 30px;
+  height: 3px;
+  background: #fff;
+  margin-top: 5px;
+  position: relative;
+  transition: 0.3s;
+}
+
+@media (max-width: 750px) {
+  .hamburger {
+    display: block;
+    z-index: 1;
+  }
+
+  .nav-list {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background: #a5c;
+    clip-path: circle(100px at 90% -15%);
+    transition: 1s ease-out;
+
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    gap: 0;
+
+    pointer-events: none;
+  }
+
+  .nav-list a {
+    font-size: 24px;
+    opacity: 0;
+  }
+
+  .nav-list li:nth-child(1) a {
+    transition: 0.5s 0.2s;
+  }
+
+  .nav-list li:nth-child(2) a {
+    transition: 0.5s 0.4s;
+  }
+
+  .nav-list li:nth-child(3) a {
+    transition: 0.5s 0.6s;
+  }
+
+  /* Estilos ativos */
+
+  .nav.active .nav-list {
+    clip-path: circle(1500px at 90% -15%);
+    pointer-events: all;
+  }
+
+  .nav.active .nav-list a {
+    opacity: 1;
+  }
+
+  .nav.active .hamburger {
+    position: fixed;
+    top: 26px;
+    right: 16px;
+    border-top-color: transparent;
+  }
+
+  .nav.active .hamburger::before {
+    transform: rotate(135deg);
+  }
+
+  .nav.active .hamburger::after {
+    transform: rotate(-135deg);
+    top: -7px;
+  }
 }
