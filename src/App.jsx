@@ -13,6 +13,7 @@ import Foto from "./components/Foto/Foto";
 import Tags from "./components/tags/tags";
 import Premium from "./components/Premium/Premium";
 import FimJornada from "./components/FimJornada/FimJornada";
+import NavBarResponsiva from "./components/NavBarResponsiva/NavBarResponsiva";
 
 function App() {
   // const handleFileUpload = (files) => {
@@ -21,7 +22,7 @@ function App() {
   return (
     <>
       <div>
-        <NavBar />
+        <NavBarResponsiva />
         <FimJornada/>
         {/* <Foto onFileUpload={handleFileUpload} /> */}
       </div>
