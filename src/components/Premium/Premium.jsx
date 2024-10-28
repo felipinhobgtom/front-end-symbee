@@ -1,0 +1,49 @@
+import "./Premium.css";
+import Design from "./img/design.png"
+import React from "react";
+
+const Premium = () => {
+  return (
+    <section className="PremiumPage">
+      <div className="PremiumPageLayout">
+        
+        <div className="PremiumPageContent">
+          <div className="instruction">
+            <div className="instructionTxt">
+              <p>
+                Membros do nosso plano têm uma análise profissional de agentes
+                qualificados e uma IA, além de um aumento de perfil!
+              </p>
+            </div>
+            <div className="garanta">
+              <h2>Apenas por R$ **,**</h2>
+              <button>Garanta já</button>
+            </div>
+          </div>
+        </div>
+
+        <div className="contentImage">
+        <img src={Design} alt="image security" />
+
+          <div>
+            <p>
+              Nosso sistema de pagamento garante a total confiabilidade ao nosso
+              usuário, todas as transações são rigorosamente verificadas!
+            </p>
+          </div>
+        </div>
+
+        <div className="btnText">
+          <button>Não obrigado!</button>
+        </div>
+      </div>
+      <div className="buttonDiv">
+    <button className="button">Voltar</button>
+  </div>
+    </section>
+
+    
+  );
+};
+
+export default Premium;

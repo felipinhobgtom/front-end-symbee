@@ -1,21 +1,30 @@
 import React from "react";
 import "./App.css"; // Importando estilos do App, se houver
-import Secao from "./components/Section/Section";
-import NavBar from "./components/NavBar/NavBar";
+import Login from "./components/Login/Login";
+import { Outlet } from "react-router-dom";
 import Footer from "./components/footer/Footer";
-import Section4 from "./components/Section 4/Section4";
-import Section3 from "./components/Section 3/Section3";
+import Cadastro from "./components/Cadastro/Cadastro";
+import NavBar from "./components/NavBar/NavBar"; // Certifique-se de que o caminho está correto
+import EscolhaDePerfil from "./components/EscolhadePerfil/EscolhaDePerfil";
+import Cargo from "./components/Cargo/Cargo";
+import CargoEstudante from "./components/CargoEstudante/CargoEstudante";
+import Bio from "./components/Bio/Bio";
+import Foto from "./components/Foto/Foto";
+import Tags from "./components/tags/tags";
+import Premium from "./components/Premium/Premium";
+import FimJornada from "./components/FimJornada/FimJornada";
 
 function App() {
+  // const handleFileUpload = (files) => {
+  //   console.log('Arquivos carregados:', files);
+  // }; utilizado para o componet fotos
   return (
     <>
-      <main className="headerSection">
+      <div>
         <NavBar />
-        <Secao />
-      </main>
-      <Section3 />
-      <Section4 />
-      <Footer />
+        <FimJornada/>
+        {/* <Foto onFileUpload={handleFileUpload} /> */}
+      </div>
     </>
   );
 }
