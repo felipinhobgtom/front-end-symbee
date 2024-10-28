@@ -3,6 +3,7 @@ import "./cadastro.css";
 import iconeGitPreto from "./img/iconeGitPreto.png";
 import iconeGoogle from "./img/iconeGoogle.png";
 import iconeLinkedin from "./img/iconeLinkedin.png";
+import Vetor from "./img/vetor.png";
 
 const Cadastro = () => {
   return (
@@ -10,7 +11,7 @@ const Cadastro = () => {
       <div className="layout">
       <div className="fieldInformations">
         <div className="titleInf">
-          <h2>Seja muito bem-vindo!</h2>
+          <h2>Seja muito bem vindo!</h2>
         </div>
         <div className="informations">
           <div className="nameAnSurname">
@@ -24,8 +25,8 @@ const Cadastro = () => {
             <input type="password" placeholder="Senha" />
           </div>
           <div className="checkbox">
-            <input type="checkbox" name="terms" id="termsUse" />
-            Eu concordo com os termos de uso do usuário
+            <input type="checkbox" name="terms" id="termsUse" /> <p>
+            Eu concordo com os termos de uso do usuário</p>
           </div>
           <div
             className="
@@ -56,7 +57,7 @@ register"
           </div>
         </div>
       </div>
-      <div className="svgLogo">.</div>
+      <div className="svgLogo"><img src={Vetor} alt="" /></div>
       </div>
     </section>
   );

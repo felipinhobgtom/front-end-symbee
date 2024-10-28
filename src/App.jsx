@@ -23,7 +23,7 @@ function App() {
     <>
       <div>
         <NavBarResponsiva />
-        <FimJornada/>
+        <EscolhaDePerfil />
         {/* <Foto onFileUpload={handleFileUpload} /> */}
       </div>
     </>
