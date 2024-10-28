@@ -8,7 +8,7 @@ const Bio = () => {
     <section>
       <div className="PositionContainer">
         <div className="LayoutContainer">
-          <div className="TitleContainer">
+          <div className="TitleContainerBio">
             <h1>Nos fale um pouco sobre você</h1>
           </div>
           <div className="Biograph">

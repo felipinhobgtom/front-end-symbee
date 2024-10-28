@@ -20,7 +20,7 @@ const Cargo = () => {
             Empresa
             <div className="inputPosition">
               <input type="text" placeholder="Digite o cargo da empresa" />
-            </div>
+            </div> <p></p>
             Localização
             <div className="inputPosition">
               <input
@@ -44,7 +44,7 @@ const Cargo = () => {
             </div>
             <div className="buttonStudent">
               <button>
-                Estudante <br /> <img src={iconeSeta} alt="icone seta" />
+                Estudante <img src={iconeSeta} alt="icone seta" />
               </button>
             </div>
           </div>

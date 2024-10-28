@@ -20,21 +20,21 @@ const EscolhaDePerfil = () => {
         <div className="choices">
           <button>
             <img src={iconeLinkedin} alt="icon Linkedin" />
-            Importar do Linkedin
+            <p>Importar do Linkedin</p>
           </button>
           <button>
             <img src={iconeGitPreto} alt="icon GitHub" />
-            Importar do GitHub
+            <p>Importar do GitHub</p>
           </button>
           <button>
             <img src={iconeCaneta} alt="icon Caneta" />
-            Fazer manualmente
+            <p>Fazer manualmente</p>
           </button>
         </div>
       </div>
       <div className="buttonContinueArea">
         <div className="Buttoncontinue">
-        <button>Continuar</button>
+          <button>Continuar</button>
         </div>
       </div>
     </section>

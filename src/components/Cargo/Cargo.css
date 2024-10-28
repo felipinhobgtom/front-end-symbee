@@ -1,6 +1,6 @@
 .Position {
   width: 100%;
-  height: 83vh;
+  min-height: 100vh;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -13,90 +13,97 @@
     #e2d3af,
     #ede0b8
   );
-  padding: 0.1rem;
+  position: relative;
 }
 
 .layoutPosition {
   display: flex;
-  flex-direction: column;
-  width: 70%;
-  height: 100%;
   align-items: center;
   justify-content: center;
+  flex-direction: column;
+  gap: 2vh;
+  padding: 5vh 2vh;
+  width: 100%;
 }
 
 .TitlePosition h1 {
-  width: 70%;
-  margin: auto;
-  margin-top: 3vh;
+  width: 80%;
+  margin: 0 auto;
+  color: #3D1B11;
   font-weight: bold;
   text-align: center;
-  font: 1rem;
+  font-size: 2.5rem;
 }
 
 .paragraphPosition {
   font-weight: 400;
   color: #877f55;
-  margin-top: 5vh;
+  text-align: center;
+  margin-bottom: 1vh;
   border-bottom: 2px solid #9e804a;
 }
 
 .contents {
-  width: 70%;
-  height: 100%;
+  width: 80%;
   display: flex;
-  align-items: center;
-  justify-content: center;
   flex-direction: column;
+  align-items: center;
+  gap: 1.5vh;
 }
 
-.inputPosition {
-  width: 70%;
-  height: 8%;
+.inputPosition,
+.doubleInput {
+  width: 80%;
   display: flex;
   align-items: center;
   justify-content: center;
-  margin: 5px;
 }
 
 .inputPosition input,
 .doubleInput input {
   width: 100%;
-  height: 100%;
+  height: 6vh;
   border: none;
   background-color: #ee9b11;
   border-radius: 30px;
   color: #865c17;
   text-align: center;
+  padding: 0 1rem;
+  outline: none;
 }
 
 .doubleInput {
   display: flex;
-  width: 70%;
-  height: 8%;
-  gap: 3.2rem;
-  flex-direction: row;
+  width: 80%;
+  gap: 2rem;
   align-items: center;
   justify-content: center;
+}
+
+.doubleInput p{
   text-align: center;
 }
 
 .buttonStudent {
   display: flex;
-  width: 70%;
-  height: 10%;
-  align-items: center;
-  justify-content: center;
+  width: 80%;
+  margin-top: 2vh;
 }
 
 .buttonStudent button {
   width: 100%;
-  height: 100%;
+  height: 10vh;
+  padding: 1vh;
   border: 4px solid black;
   background-color: transparent;
   border-radius: 10px;
   color: black;
   font-weight: bold;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.5rem;
 }
 
 .buttonStudent button:hover {
@@ -109,59 +116,67 @@
   color: white;
 }
 
-/* Estilos do contêiner dos botões */
+.buttonStudent button img{
+  width: 3vh;
+  height: 3vh;
+  margin-left: 1vh;
+}
+
 .buttonsMoving {
   display: flex;
   justify-content: space-between;
-  padding: 1vh;
-  align-items: center;
-  width: 100%;
-  height: 8vh;
+  width: 80%;
+  margin-top: 3vh;
 }
 
-/* Estilos dos botões */
 .buttonsMoving button {
-  width: 20vh;
-  height: 6vh;
+  width: 100%;
+  padding: 1vh;
   border: 4px solid #ee9b11;
-  border-radius: 30px;
+  border-radius: 3vh;
   background-color: #ee9b11;
   color: white;
   font-weight: bold;
-  font-size: 2.5vh;
   cursor: pointer;
+  text-align: center;
+  transition: background-color 0.3s ease, color 0.3s ease;
 }
 
-/* Estilos específicos para o botão "Voltar" */
-#buttonBack button {
-  background-color: transparent;
-  color: black;
-}
-
-#buttonContinue button:active {
+.buttonsMoving button:hover {
   background-color: white;
   color: black;
 }
 
-#buttonBack button:active {
+.buttonsMoving button:active {
   background-color: #ee9b11;
-  color: black;
+  color: white;
 }
 
-.Position::after {
-    position: absolute;
-    content: url(./public/svg/coisudo.svg);
-    margin-right: 181vh;
-    margin-top: 29vh;
-    display: table;
-    clear: both;
+
+
+
+@media (max-width:1024px){
+  .TitlePosition h1{
+    font-size: 2.0rem;
   }
 
-.Position::before {
-  position: absolute;
-  content: url(./public/svg/hexagonos.svg);
-  margin-left: 350vh;
-  margin-top: 18.5vh;
-  display: table;
-  clear: both;
+  .inputPosition input::placeholder{
+    font-size: 1.0rem;
+  }
+
+}
+
+@media (max-width:768px){
+  .TitlePosition h1{
+   font-size: 1.5rem; 
+  }
+
+  .inputPosition input::placeholder{
+    font-size: 0.8rem;
+  }
+
+  .buttonsMoving button {
+    
+    
+  }
 }

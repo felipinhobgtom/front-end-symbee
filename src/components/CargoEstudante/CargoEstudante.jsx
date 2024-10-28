@@ -28,8 +28,9 @@ const CargoEstudante = () => {
             </div>
             <div className="StudentButtonWrapper">
               <button>
+              <img src={iconeSetaEsquerda} alt="icon seta para esuqerdda" />
                 Empregado <br /> 
-                <img src={iconeSetaEsquerda} alt="icon seta para esuqerdda" />
+                
               </button>
             </div>
           </div>

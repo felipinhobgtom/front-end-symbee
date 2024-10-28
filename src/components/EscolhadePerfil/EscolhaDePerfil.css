@@ -4,7 +4,7 @@
   justify-content: center;
   flex-direction: column;
   width: 100%;
-  height: 92vh;
+  height: 84vh;
   background-image: radial-gradient(
     circle,
     #ede5b4,
@@ -13,24 +13,6 @@
     #f4e79a,
     #f6e791
   );
-}
-
-.layoutchoice::after {
-  position: absolute;
-  content: url(./public/svg/lines.svg);
-  margin-left: 141vh;
-  margin-top: 33vh;
-  display: table;
-  clear: both;
-}
-
-.layoutchoice::before {
-  position: absolute;
-  content: url(./public/svg/coisinhos.svg);
-  margin-right: 187vh;
-  margin-bottom: -48vh;
-  display: table;
-  clear: both;
 }
 
 .contents {
@@ -42,6 +24,7 @@
   width: 50%;
   padding: auto;
   gap: 2.2rem;
+  padding: 15vh 5vh;
 }
 
 .titleChoice h1 {
@@ -63,36 +46,44 @@
 }
 
 .choices {
-  align-items: center;
   width: 90%;
-  height: 30%;
+  height: 60vh;
   display: flex;
+  align-items: center;
+  justify-content: center;
   flex-direction: column;
-  gap: 20px;
+  gap: 2vh;
 }
 
 .choices button {
+  display: flex;
   width: 70%;
-  height: 6vh;
-  text-align: center;
-  align-items: center;
+  height: 8vh;
   justify-content: center;
   border: 3px solid black;
   border-radius: 30px;
   background-color: transparent;
   color: black;
   font-weight: 700;
+  flex-direction: row;
+}
+
+.choices button p {
+  font-size: 2.5vh;
+  height: 100%;
+  margin-top: 1.6vh;
 }
 
 .choices img {
   width: 4vh;
   height: 4vh;
+  margin-top: 1.6vh;
   margin-right: 1vh;
 }
 
-.choices button:hover{
-    background-color: white;
-    transition: all ease-in-out 0.4s;
+.choices button:hover {
+  background-color: white;
+  transition: all ease-in-out 0.4s;
 }
 
 .buttonContinueArea {
@@ -122,4 +113,83 @@
   font-weight: 600;
   font-size: 1.5rem;
   border-radius: 30px;
+}
+
+@media (max-width: 1024px) {
+  .titleChoice h1 {
+    width: 100%;
+  }
+
+  .choices {
+    width: 100%;
+  }
+  
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+  .titleChoice h1 {
+    width: 100%;
+  }
+
+  .choices {
+    width: 100%;
+  }
+
+  .choices button{
+    width: 100%;
+  }
+
+  .choices button p {
+    font-size: 2.0vh;
+    height: 100%;
+    margin-top: 2.3vh;
+  }
+.paragraphChoice{
+  width: 100%;
+  text-align: center;
+  font-size: 2vh;
+  
+}
+.buttonContinueArea button {
+  width: 15vh;
+  height: 5vh;
+  color: white;
+  font-size: 1.0rem;
+  border-radius: 30px;
+}
+}
+
+@media (min-width: 412px) and (max-width: 768px) {
+
+  .contents{
+    padding: 8vh 3vh;
+  }
+  .titleChoice{
+    width: 100%;
+}
+
+  .titleChoice h1 {
+    font-size: 3vh;
+  }
+
+  .paragraphChoice{
+    width: 100%;
+    text-align: center;
+  }
+
+  .choices {
+    width: 100%;
+  }
+
+  .choices button{
+    width: 100%;
+  }
+
+  .choices button p {
+    font-size: 2.0vh;
+    height: 100%;
+    margin-top: 2.3vh;
+  }
+
+  
 }
