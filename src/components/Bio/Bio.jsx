@@ -30,15 +30,9 @@ const Bio = () => {
         </div>
       </div>
       <div className="ButtonContainer">
-        <div className="BackButton">
-          <button>Voltar</button>
-        </div>
-        <div className="Jump">
-          <button>Pular</button>
-        </div>
-        <div className="ContinueButton">
-          <button>Continuar</button>
-        </div>
+        <button>Voltar</button>
+        <button>Pular</button>
+        <button>Continuar</button>
       </div>
     </section>
   );
