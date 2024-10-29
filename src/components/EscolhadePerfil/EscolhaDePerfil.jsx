@@ -3,8 +3,14 @@ import React from "react";
 import iconeLinkedin from "./img/iconeLinkedin.png";
 import iconeGitPreto from "./img/iconeGitPreto.png";
 import iconeCaneta from "./img/iconeCaneta.png";
+import { useNavigate } from "react-router-dom";
 
 const EscolhaDePerfil = () => {
+  const navegar = useNavigate();
+  const handleCargo = () => {
+    navegar("/cargo");
+  };
+
   return (
     <section className="layoutchoice">
       <div className="contents">
@@ -20,21 +26,21 @@ const EscolhaDePerfil = () => {
         <div className="choices">
           <button>
             <img src={iconeLinkedin} alt="icon Linkedin" />
-            Importar do Linkedin
+            <p>Importar do Linkedin</p>
           </button>
           <button>
             <img src={iconeGitPreto} alt="icon GitHub" />
-            Importar do GitHub
+            <p>Importar do GitHub</p>
           </button>
           <button>
             <img src={iconeCaneta} alt="icon Caneta" />
-            Fazer manualmente
+            <p>Fazer manualmente</p>
           </button>
         </div>
       </div>
       <div className="buttonContinueArea">
         <div className="Buttoncontinue">
-        <button>Continuar</button>
+          <button onClick={handleCargo}>Continuar</button>
         </div>
       </div>
     </section>

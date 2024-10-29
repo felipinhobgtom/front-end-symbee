@@ -1,14 +1,30 @@
 import React from "react";
 import "./CargoEstudante.css";
 import iconeSetaEsquerda from "./img/iconeSetaEsquerda.png";
+import { useNavigate } from "react-router-dom";
+
 const CargoEstudante = () => {
+
+  const navegar = useNavigate();
+
+  const handleCargo = () => {
+    navegar('/cargo')
+  }
+  const handleBio = () => {
+    navegar('/bio')
+  }
+  const handleBack = () => {
+    navegar('profile-choice')
+  }
+
   return (
     <section>
       <div className="PositionContainer">
         <div className="LayoutContainer">
           <div className="TitleContainer">
             <h1>
-            Olá, usuário! finalize as informações para deixar seu perfil mais atraente!
+              Olá, usuário! finalize as informações para deixar seu perfil mais
+              atraente!
             </h1>
           </div>
           <div className="SubtitleContainer">
@@ -17,7 +33,10 @@ const CargoEstudante = () => {
           <div className="ContentContainer">
             Instituição de Ensino
             <div className="InputWrapper">
-              <input type="text" placeholder="Informe onde você está estudando" />
+              <input
+                type="text"
+                placeholder="Informe onde você está estudando"
+              />
             </div>
             Conclusão
             <div className="InputWrapper">
@@ -27,9 +46,9 @@ const CargoEstudante = () => {
               />
             </div>
             <div className="StudentButtonWrapper">
-              <button>
-                Empregado <br /> 
+              <button onClick={handleCargo}>
                 <img src={iconeSetaEsquerda} alt="icon seta para esuqerdda" />
+                Empregado <br />
               </button>
             </div>
           </div>
@@ -37,10 +56,10 @@ const CargoEstudante = () => {
       </div>
       <div className="photoButton">
         <div className="BackButton">
-          <button>Voltar</button>
+          <button onClick={handleBack}>Voltar</button>
         </div>
         <div className="ContinueButton">
-            <button>Continuar</button>
+          <button onClick={handleBio}>Continuar</button>
         </div>
       </div>
     </section>

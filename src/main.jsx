@@ -1,15 +1,39 @@
 import { createRoot } from "react-dom/client";
-import App from "./App.jsx";
+import LandingPage from "./LandingPage";
+import Cadastro from "./components/Cadastro/Cadastro";
 import "./index.css";
-import { BrowserRouter, Route, Routes } from "react-router-dom";
-import Cadastro from "./components/Cadastro/Cadastro.jsx";
+import {
+  BrowserRouter as Router,
+  Route,
+  Routes,
+  Outlet,
+} from "react-router-dom";
+import Armario from "./Armario";
+import EscolhaDePerfil from "./components/EscolhadePerfil/EscolhaDePerfil";
+import Premium from "./components/Premium/Premium";
+import Login from "./components/Login/Login";
+import Cargo from "./components/Cargo/Cargo";
+import CargoEstudante from "./components/CargoEstudante/CargoEstudante";
+import Bio from "./components/Bio/Bio";
+import Tags from "./components/tags/tags";
+import FimJornada from "./components/FimJornada/FimJornada";
 
 createRoot(document.getElementById("root")).render(
-  <BrowserRouter>
-    <Routes>
-      <Route path="/" element={<App />}>
-        <Route path="Cadastro" element={<Cadastro />}/>
-      </Route>
-    </Routes>
-  </BrowserRouter>
+  <>
+    <Armario />
+    <Router>
+      <Routes>
+        <Route path="/" element={<LandingPage />} />
+        <Route path="/cadastro" element={<Cadastro />} />
+        <Route path="/login" element={<Login />} />
+        <Route path="/profile-choice" element={<EscolhaDePerfil />} />
+        <Route path="/premium" element={<Premium />} />
+        <Route path="/cargo" element={<Cargo />} />
+        <Route path="/estudante" element={<CargoEstudante />} />
+        <Route path="/bio" element={<Bio />} />
+        <Route path="/tag" element={<Tags />} />
+        <Route path="/end" element={<FimJornada />} />
+      </Routes>
+    </Router>
+  </>
 );

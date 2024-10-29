@@ -1,9 +1,14 @@
 import React from "react";
 import "./Section.css";
 import "bootstrap/dist/css/bootstrap.min.css";
-import { BrowserRouter, Route, Routes } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
 
 function Secao() {
+  const navegar = useNavigate();
+  const handleNavegar = () => {
+    navegar("/cadastro");
+  };
+
   return (
     <>
       <section className="section-one">
@@ -13,12 +18,10 @@ function Secao() {
             Comunidade freelancer para desenvolvedores brasileiros, que usa a
             gamificação, reputação e IA para melhorar a sua experiência!
           </h3>
-          <a
-            name=""
+          <button
             class="btn btn-primary"
-            href="/Cadastro"
             role="button"
-            element
+            onClick={handleNavegar}
             style={{
               display: "flex",
               alignItems: "center",
@@ -29,7 +32,7 @@ function Secao() {
             }}
           >
             Conhecer agora! <i class="fa-solid fa-arrow-right"></i>
-          </a>
+          </button>
         </div>
         <div className="image">
           <img src="./public/bee_img.png" alt="" width={"500px"} />

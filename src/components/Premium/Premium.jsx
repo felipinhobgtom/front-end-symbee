@@ -1,12 +1,20 @@
+import { useNavigate } from "react-router-dom";
 import "./Premium.css";
-import Design from "./img/design.png"
+import Design from "./img/design.png";
 import React from "react";
 
 const Premium = () => {
+  const navegar = useNavigate();
+  const handleBack = () => {
+    navegar("/tag");
+  };
+  const handleEnd = () => {
+    navegar("/end");
+  };
+
   return (
     <section className="PremiumPage">
       <div className="PremiumPageLayout">
-        
         <div className="PremiumPageContent">
           <div className="instruction">
             <div className="instructionTxt">
@@ -17,13 +25,13 @@ const Premium = () => {
             </div>
             <div className="garanta">
               <h2>Apenas por R$ **,**</h2>
-              <button>Garanta já</button>
+              <button onClick={handleEnd}>Garanta já</button>
             </div>
           </div>
         </div>
 
         <div className="contentImage">
-        <img src={Design} alt="image security" />
+          <img src={Design} alt="image security" />
 
           <div>
             <p>
@@ -33,16 +41,16 @@ const Premium = () => {
           </div>
         </div>
 
-        <div className="btnText">
-          <button>Não obrigado!</button>
+        <div className="btnText text-white">
+          <button onClick={handleEnd}>Não obrigado!</button>
         </div>
       </div>
       <div className="buttonDiv">
-    <button className="button">Voltar</button>
-  </div>
+        <button className="button" onClick={handleBack}>
+          Voltar
+        </button>
+      </div>
     </section>
-
-    
   );
 };
 
