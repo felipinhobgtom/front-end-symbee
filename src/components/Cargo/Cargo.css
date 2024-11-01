@@ -29,7 +29,7 @@
 .TitlePosition h1 {
   width: 80%;
   margin: 0 auto;
-  color: #3D1B11;
+  color: #3d1b11;
   font-weight: bold;
   text-align: center;
   font-size: 2.5rem;
@@ -37,7 +37,7 @@
 
 .paragraphPosition {
   font-weight: 400;
-  color: #877f55;
+  color: #865c17;
   text-align: center;
   margin-bottom: 1vh;
   border-bottom: 2px solid #9e804a;
@@ -72,6 +72,10 @@
   outline: none;
 }
 
+input::placeholder{
+  color: #865c17;
+}
+
 .doubleInput {
   display: flex;
   flex-wrap: wrap;
@@ -80,7 +84,7 @@
   justify-content: center;
 }
 
-.doubleInput p{
+.doubleInput p {
   text-align: center;
 }
 
@@ -116,7 +120,7 @@
   color: white;
 }
 
-.buttonStudent button img{
+.buttonStudent button img {
   width: 3vh;
   height: 3vh;
   margin-left: 1vh;
@@ -124,58 +128,56 @@
 
 .buttonsMoving {
   display: flex;
+  width: 100%;
+  height: 8vh;
+  background-color: white;
+  display: flex;
   align-items: center;
   justify-content: space-between;
-  width: 100%;
-  height: 100%;
-  margin-top: 3vh;
 }
 
-.buttonsMoving button {
-  width: 100%;
-  padding: 1vh;
-  border: 5px solid #ee9b11;
-  border-radius: 3vh;
-  background-color: #ee9b11;
-  color: white;
-  font-weight: bold;
-  cursor: pointer;
+.buttonContinue, .buttonBack {
+  width: 10%;
+  align-items: center;
   text-align: center;
-  transition: background-color 0.3s ease, color 0.3s ease;
+  justify-content: center;
+}
+.buttonContinue button,
+.buttonBack button {
+  background-color: #ffa500;
+  border-radius: 3vh;
+  width: 18vh;
+  height: 6vh;
+  margin: auto;
+  font-size: 2.5vh;
+  font-weight: bold;
+  border: 3px solid #ffa500;
 }
 
-.buttonsMoving button:hover {
+.buttonContinue button:active,
+.buttonBack button:active {
   background-color: white;
-  color: black;
+  border: #ffa500;
+  color: #000000;
+  border: 3px solid #ffa500;
 }
 
-.buttonsMoving button:active {
-  background-color: #ee9b11;
-  color: white;
+@media (max-width: 1024px) {
+  .TitlePosition h1 {
+    font-size: 2rem;
+  }
+
+  .inputPosition input::placeholder {
+    font-size: 1rem;
+  }
 }
 
-
-
-
-@media (max-width:1024px){
-  .TitlePosition h1{
-    font-size: 2.0rem;
+@media (max-width: 768px) {
+  .TitlePosition h1 {
+    font-size: 1.5rem;
   }
 
-  .inputPosition input::placeholder{
-    font-size: 1.0rem;
-  }
-
-}
-
-@media (max-width:768px){
-  .TitlePosition h1{
-   font-size: 1.5rem; 
-  }
-
-  .inputPosition input::placeholder{
+  .inputPosition input::placeholder {
     font-size: 0.8rem;
   }
-
-  
 }

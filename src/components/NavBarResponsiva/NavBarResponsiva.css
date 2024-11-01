@@ -113,6 +113,18 @@ header {
     display: none;
 }
 
+.mobile-menu {
+    overflow: hidden;
+    max-height: 0;
+    transition: max-height 0.5s ease-in-out;
+  }
+  
+  /* Quando o menu está aberto */
+  .mobile-menu.open {
+    max-height: 500px; /* Defina o valor que cubra o conteúdo do menu */
+  }
+  
+
 
 
 /* Media query para dispositivos móveis */

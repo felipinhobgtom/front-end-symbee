@@ -65,10 +65,10 @@ const Cargo = () => {
         </div>
       </div>
       <div className="buttonsMoving">
-        <div id="buttonBack">
+        <div className="buttonBack">
           <button onClick={handleBack}>Voltar</button>
         </div>
-        <div id="buttonContinue">
+        <div className="buttonContinue">
           <button onClick={handleBio}>Continuar</button>
         </div>
       </div>

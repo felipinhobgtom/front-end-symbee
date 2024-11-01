@@ -4,7 +4,7 @@
   justify-content: center;
   flex-direction: column;
   width: 100%;
-  height: 84vh;
+  height: 87.9vh;
   background-image: radial-gradient(
     circle,
     #ede5b4,
@@ -24,7 +24,6 @@
   width: 50%;
   padding: auto;
   gap: 2.2rem;
-  padding: 15vh 5vh;
 }
 
 .titleChoice h1 {
@@ -88,31 +87,30 @@
 
 .buttonContinueArea {
   display: flex;
-  justify-content: right;
   width: 100%;
-  height: 8vh;
+  height: 10vh;
   background-color: white;
-  border-top: 2px solid #b6b6b6;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
 }
 
 .Buttoncontinue {
-  display: flex;
-  height: 7vh;
-  width: 30vh;
-  align-items: center;
-  justify-content: center;
-  text-align: center;
+  width: 10%;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
 }
 
 .buttonContinueArea button {
-  width: 20vh;
-  height: 5vh;
-  background-color: #ee9b11;
-  color: white;
-  border: 30px;
-  font-weight: 600;
-  font-size: 1.5rem;
-  border-radius: 30px;
+  background-color: #FFA500;
+    border-radius: 3vh;
+    width: 18vh;
+    height: 6vh;
+    margin: auto;
+    font-size: 2.5vh;
+    font-weight: bold;
+    border: 3px solid #FFA500 ;
 }
 
 @media (max-width: 1024px) {

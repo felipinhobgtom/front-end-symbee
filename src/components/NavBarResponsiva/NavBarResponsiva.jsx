@@ -61,34 +61,25 @@ const NavBarResponsiva = () => {
         </div>
       </nav>
       <div className={`mobile-menu ${isMenuOpen ? "open" : ""}`}>
-        <ul>
-          <li className="nav-item">
-            <a href="#" className="nav-link">
-              Início
-            </a>
-          </li>
-          <li className="nav-item">
-            <a href="#" className="nav-link">
-              Projetos
-            </a>
-          </li>
-          <li className="nav-item">
-            <a href="#" className="nav-link">
-              Sobre
-            </a>
-          </li>
-        </ul>
-        <div className="login-button">
-          <button>
-            <a href="#">Entrar</a>
-          </button>
-        </div>
-        <div className="btn-registrar">
-          <button>
-            <a href="#">Registrar</a>
-          </button>
-        </div>
-      </div>
+  <ul>
+    <li className="nav-item">
+      <a href="#" className="nav-link">Início</a>
+    </li>
+    <li className="nav-item">
+      <a href="#" className="nav-link">Projetos</a>
+    </li>
+    <li className="nav-item">
+      <a href="#" className="nav-link">Sobre</a>
+    </li>
+  </ul>
+  <div className="login-button">
+    <button><a href="#">Entrar</a></button>
+  </div>
+  <div className="btn-registrar">
+    <button><a href="#">Registrar</a></button>
+  </div>
+</div>
+
     </header>
   );
 };

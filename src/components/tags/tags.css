@@ -75,6 +75,7 @@ background-image: linear-gradient(to left, #fdf6cb, #fdf6c6, #fef5c0, #fef5bb, #
     gap: 1vh;
     justify-content: center;
     max-width: 100vh;
+    
 }
 
 /* Estilo das tags */
@@ -102,19 +103,23 @@ background-image: linear-gradient(to left, #fdf6cb, #fdf6c6, #fef5c0, #fef5bb, #
     width: 100%;
     height: 8vh;
     background-color: white;
-}
-
-.buttonArea{
     display: flex;
     align-items: center;
     justify-content: flex-end;
 }
 
+.continueButton{
+    width: 10%;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+}
 .continueButton button{
     background-color: #FFA500;
     border-radius: 3vh;
     width: 18vh;
     height: 6vh;
+    margin: auto;
     font-size: 2.5vh;
     font-weight: bold;
     border: 3px solid #FFA500 ;
