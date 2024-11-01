@@ -29,9 +29,10 @@ function Section3() {
       funcao: "Front-End",
     },
     {
-      nome: "Vinicius Mendes",
-      foto: "./public/profile-icon-3.png",
-      funcao: "Scrum Master",
+      nome: "Vitor Nascimento",
+      foto: "./public/profile-icon-6.png",
+      funcao: "Back-End",
+      
     },
     {
       nome: "Beatriz Chagas",
@@ -44,9 +45,9 @@ function Section3() {
       funcao: "P.O",
     },
     {
-      nome: "Vitor Nascimento",
-      foto: "./public/profile-icon-6.png",
-      funcao: "Back-End",
+      nome: "Vinicius Mendes",
+      foto: "./public/profile-icon-3.png",
+      funcao: "Scrum Master",
     },
   ];
 

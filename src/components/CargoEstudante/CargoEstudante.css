@@ -1,6 +1,6 @@
 .PositionContainer {
   width: 100%;
-  height: 83vh;
+  min-height: 100vh;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -13,122 +13,140 @@
     #e2d3af,
     #ede0b8
   );
-
-  & .LayoutContainer {
-    display: flex;
-    flex-direction: column;
-    width: 70%;
-    height: 100%;
-    align-items: center;
-    justify-content: center;
-    padding: 5vh 5vh;
-
-    & .TitleContainer h1 {
-      width: 70%;
-      margin: auto;
-      margin-top: 3vh;
-      font-weight: bold;
-      text-align: center;
-      color: #2f160e;
-      font-size: 2rem;
-    }
-
-    & .SubtitleContainer {
-      font-weight: 400;
-      color: #877f55;
-      margin-top: 10vh;
-      border-bottom: 2px solid #9e804a;
-    }
-
-    & .ContentContainer {
-      width: 70%;
-      height: 100%;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      flex-direction: column;
-
-      & .InputWrapper input {
-        width: 100%;
-        height: 10%;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        margin: 2vh;
-        outline: none;
-      }
-
-      & .StudentButtonWrapper {
-        display: flex;
-        width: 70%;
-        height: 15%;
-        align-items: center;
-        justify-content: center;
-
-        & button {
-          display: flex;
-          align-items: center;
-          justify-content: center;
-          width: 100%;
-          height: 100%;
-          border: 4px solid black;
-          background-color: transparent;
-          border-radius: 10px;
-          color: black;
-          font-weight: bold;
-          gap: 1vh;
-        }
-
-        & button:hover {
-          background-color: white;
-          transition: all ease-in 0.4s;
-        }
-
-        & button:active {
-          background-color: black;
-          color: white;
-        }
-      }
-    }
-  }
+  position: relative;
 }
 
-section {
-  & .photoButton {
-    display: flex;
-    justify-content: space-between;
-    padding: 1vh;
-    align-items: center;
-    width: 100%;
-    height: 8vh;
+.LayoutContainer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 2vh;
+  padding: 5vh 2vh;
+  width: 100%;
+}
 
-    & button {
-      width: 20vh;
-      height: 6vh;
-      border: 4px solid #ee9b11;
-      border-radius: 30px;
-      background-color: #ee9b11;
-      color: white;
-      font-weight: bold;
-      font-size: 2.5vh;
-      cursor: pointer;
-    }
+.TitleContainer h1 {
+  width: 80%;
+  margin: 0 auto;
+  color: #3d1b11;
+  font-weight: bold;
+  text-align: center;
+  font-size: 2.5rem;
+}
 
-    & .BackButton button {
-      background-color: transparent;
-      color: black;
-    }
+.SubtitleContainer {
+  font-weight: 400;
+  color: #865c17;
+  text-align: center;
+  margin-bottom: 1vh;
+  border-bottom: 2px solid #9e804a;
+}
 
-    & .ContinueButton button:active {
-      background-color: white;
-      color: black;
-    }
+.ContentContainer {
+  width: 80%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1.5vh;
+}
 
-    & .BackButton button:active {
-      background-color: #ee9b11;
-      color: black;
-    }
-  }
+.InputWrapper {
+  width: 80%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.InputWrapper input {
+  width: 100%;
+  height: 6vh;
+  border: none;
+  background-color: #ee9b11;
+  border-radius: 30px;
+  color: #865c17;
+  text-align: center;
+  padding: 0 1rem;
+  outline: none;
+}
+
+input::placeholder{
+  color: #865c17;
+}
+
+.buttonEmpregado {
+  display: flex;
+  width: 80%;
+  margin-top: 2vh;
+}
+
+.buttonEmpregado button {
+  width: 100%;
+  height: 10vh;
+  padding: 1vh;
+  gap: 1vh;
+  border: 4px solid black;
+  background-color: transparent;
+  border-radius: 10px;
+  color: black;
+  font-weight: bold;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.5rem;
+}
+
+.buttonEmpregado button:hover {
+  background-color: white;
+  transition: all ease-in 0.4s;
+}
+
+.buttonEmpregado button:active {
+  background-color: black;
+  color: white;
+}
+
+.buttonStudent button img {
+  width: 3vh;
+  height: 3vh;
+  margin-left: 1vh;
+}
+
+.moveButtons {
+  display: flex;
+  width: 100%;
+  height: 8vh;
+  background-color: white;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.ContinueButton, .BackButton {
+  width: 10%;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+}
+.ContinueButton button,
+.BackButton button {
+  background-color: #ffa500;
+  border-radius: 3vh;
+  width: 18vh;
+  height: 6vh;
+  margin: auto;
+  font-size: 2.5vh;
+  font-weight: bold;
+  border: 3px solid #ffa500;
+}
+
+.ContinueButton button:active,
+.BackButton button:active {
+  background-color: white;
+  border: #ffa500;
+  color: #000000;
+  border: 3px solid #ffa500;
 }
 
 @media (max-width: 1024px) {

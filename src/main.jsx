@@ -6,9 +6,7 @@ import {
   BrowserRouter as Router,
   Route,
   Routes,
-  Outlet,
 } from "react-router-dom";
-import Armario from "./Armario";
 import EscolhaDePerfil from "./components/EscolhadePerfil/EscolhaDePerfil";
 import Premium from "./components/Premium/Premium";
 import Login from "./components/Login/Login";
@@ -17,10 +15,10 @@ import CargoEstudante from "./components/CargoEstudante/CargoEstudante";
 import Bio from "./components/Bio/Bio";
 import Tags from "./components/tags/tags";
 import FimJornada from "./components/FimJornada/FimJornada";
+import NavBarResponsiva from "./components/NavBarResponsiva/NavBarResponsiva";
 
 createRoot(document.getElementById("root")).render(
   <>
-    <Armario />
     <Router>
       <Routes>
         <Route path="/" element={<LandingPage />} />

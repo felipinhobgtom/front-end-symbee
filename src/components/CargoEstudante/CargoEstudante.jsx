@@ -45,7 +45,7 @@ const CargoEstudante = () => {
                 placeholder="Quando você irá obter seu certificado?"
               />
             </div>
-            <div className="StudentButtonWrapper">
+            <div className="buttonEmpregado">
               <button onClick={handleCargo}>
                 <img src={iconeSetaEsquerda} alt="icon seta para esuqerdda" />
                 Empregado <br />
@@ -54,7 +54,7 @@ const CargoEstudante = () => {
           </div>
         </div>
       </div>
-      <div className="photoButton">
+      <div className="moveButtons">
         <div className="BackButton">
           <button onClick={handleBack}>Voltar</button>
         </div>
