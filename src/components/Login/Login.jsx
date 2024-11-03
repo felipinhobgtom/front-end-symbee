@@ -1,8 +1,20 @@
 import React from "react";
 import Vetor from "./img/vetor.png";
 import "./login.css";
+import { useNavigate } from "react-router-dom";
+
+  
 
 const Login = () => {
+
+  const navegar = useNavigate();
+
+  const handleProfileChoice = () => {
+    navegar("/profile-choice");
+  };
+  
+
+  
   return (
     <section className="LoginPage">
       <div className="layout">
@@ -21,7 +33,7 @@ const Login = () => {
             </div>
             <div
               className="register">
-              <button>Entrar</button>
+              <button onClick={handleProfileChoice}>Entrar</button>
             </div>
           </div>
         </div>

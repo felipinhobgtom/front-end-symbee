@@ -7,7 +7,7 @@
 }
 
 /* Estilos para o header */
-header {
+header .nav-bar {
     background-color: transparent;
 }
 
@@ -35,11 +35,7 @@ header {
     padding: 1.5rem 6rem;
 }
 
-/* Estilo do logo */
-.logo {
-    display: flex;
-    align-items: center;
-}
+
 
 /* Estilos para a lista de navegação */
 .nav-list {

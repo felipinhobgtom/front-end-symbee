@@ -1,0 +1,141 @@
+
+
+
+/* Estilos para o header */
+header .navbarRegister {
+  background-color: white;
+}
+
+.navbarBrandRegister {
+  font-size: 1.5em;
+  font-weight: bold;
+  color: #3d1b11;
+}
+
+.imageLogoRegister {
+  display: flex;
+  flex-direction: row;
+  gap: 1vh;
+  align-items: center;
+}
+
+.imageLogoRegister img {
+  width: 4vh;
+  height: 6vh;
+}
+
+/* Estilo da barra de navegação */
+
+
+/* Estilos para a lista de navegação */
+.navListRegister {
+  display: flex;
+  align-items: center;
+  margin-top: 2vh;
+}
+
+.navListRegister ul {
+  display: flex;
+  justify-content: center;
+  list-style: none;
+}
+
+.navItemRegister {
+  margin: 0 15px;
+}
+
+.navLinkRegister {
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 1.15rem;
+  color: #3d1b11;
+}
+
+/* Ocultar ícone do menu por padrão */
+.mobile-menu-icon-register {
+  display: none;
+}
+
+.mobile-menu-icon-register img {
+  background-color: transparent;
+  border-radius: 0;
+}
+
+/* Ocultar menu móvel por padrão */
+.mobile-menu-register {
+  display: none;
+}
+
+.mobile-menu-register {
+  overflow: hidden;
+  max-height: 0;
+  transition: max-height 0.5s ease-in-out;
+}
+
+/* Quando o menu está aberto */
+.mobile-menu-register.open {
+  max-height: 40vh; /* Defina o valor que cubra o conteúdo do menu */
+}
+
+/* Estilos para a barra de navegação */
+.navbarRegister {
+    display: flex;
+    justify-content: flex-start;
+    padding: 1.5rem 1rem; 
+    width: 100%;
+    gap: 80vh;
+    flex-wrap: wrap; 
+  }
+  
+  @media screen and (max-width: 1440px) {
+    .navbarRegister {
+      justify-content: flex-start;
+      padding: 1rem;
+      gap: 25rem; /* Ajuste adicional para telas menores */
+    }
+  }
+  
+  @media screen and (max-width: 1024px) {
+    .navbarRegister {
+      gap: 1rem; 
+      justify-content: flex-start;
+      gap: 25vh;
+      padding: 0.5rem;
+    }
+  }
+  
+  @media screen and (max-width: 834px) {
+    .navbarRegister {
+      flex-wrap: wrap; 
+      justify-content: space-between;
+      padding: 0.5rem;
+    }
+    .navListRegister {
+      display: none; /* Esconder a lista de navegação em telas pequenas */
+    }
+    .mobile-menu-icon-register{
+        display: block;
+    }
+  }
+  
+  @media screen and (max-width: 768px) {
+    .navbarRegister {
+      justify-content: space-between;
+      padding: 0.5rem;
+    }
+    .mobile-menu-icon-register {
+      display: block;
+      width: auto;
+      justify-content: flex-end; /* Alinha o ícone à direita */
+    }
+  }
+  
+  /* Ajuste específico para telas menores */
+  @media screen and (max-width: 412px) {
+    .navbarRegister {
+      gap: 1rem; /* Diminuir o gap ainda mais em telas muito pequenas */
+      padding: 0.5rem;
+      height: auto;
+    }
+  }
+  
