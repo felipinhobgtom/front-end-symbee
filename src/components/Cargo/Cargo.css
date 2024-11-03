@@ -146,9 +146,9 @@ input::placeholder{
 .buttonBack button {
   background-color: #ffa500;
   border-radius: 3vh;
-  width: 18vh;
+  min-width: 100%;
   height: 6vh;
-  margin: auto;
+  
   font-size: 2.5vh;
   font-weight: bold;
   border: 3px solid #ffa500;
@@ -179,5 +179,10 @@ input::placeholder{
 
   .inputPosition input::placeholder {
     font-size: 0.8rem;
+  }
+
+  .buttonContinue, .buttonBack{
+    width: 30%;
+    margin: auto;
   }
 }

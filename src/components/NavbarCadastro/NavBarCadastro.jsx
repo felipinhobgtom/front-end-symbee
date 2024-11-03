@@ -5,11 +5,11 @@ import vetorLaranja from "./img/vetorLaranja.png";
 
 const NavBarCadastro = () => {
   // Estado para controlar se o menu está aberto ou fechado
-  const [isMenuOpenRegister, setIsMenuOpen] = useState(false);
+  const [isMenuOpenRegister, setIsMenuOpenRegister] = useState(false);
 
   // Função para alternar o estado do menu
   const toggleMenuRegister = () => {
-    setIsMenuOpen(!isMenuOpenRegister);
+    setIsMenuOpenRegister(!isMenuOpenRegister);
   };
 
   return (

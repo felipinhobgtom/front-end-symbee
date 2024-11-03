@@ -134,6 +134,10 @@
   flex-wrap: wrap;
 }
 
+.checkbox p{
+  margin-top: 2vh
+}
+
 .checkbox input[type="checkbox"] {
   appearance: none;
   width: 3vh;
@@ -161,6 +165,8 @@
 .checkbox label {
   cursor: pointer;
   color: #333;
+  align-items: center;
+  justify-content: center;
 }
 
 .checkbox .terms-link {
@@ -222,15 +228,30 @@
     margin: auto;
   }
 
+  .checkbox{
+    width: 100%;
+  }
   
 
   
 }
 
+@media (max-width:834px){
+  .checkbox{
+    width: 100%;
+  }
+
+  .social-buttons{
+    display: flex;
+    width: 100%;
+    height: 30vh;
+  }
+}
 
 
 
-@media (min-width: 412px) and (max-width: 768px) and (max-width: 834px)  {
+
+@media  (max-width: 768px) and (max-width: 834px)  {
   .RegisterPage {
     height: 120vh;
   }
@@ -246,7 +267,7 @@
     flex-direction: column;
   }
   .checkbox {
-    width: 100%;
+    width: 30%;
   }
   #termsUse p {
     font-size: 0.1vh;
@@ -255,11 +276,12 @@
   .svgLogo{
     display: none;
   }
+  
 }
 
 @media (max-width: 412px) {
   .RegisterPage {
-    padding: 70vh 0vh;
+    padding: 80vh 0vh;
     height: 120vh;
   }
 
@@ -293,7 +315,11 @@
     }
   }
   .checkbox {
-    width: 100%;
+    width: 30%;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    font-size: 0.3rem;
   }
   #termsUse p {
     font-size: 0.1vh;
