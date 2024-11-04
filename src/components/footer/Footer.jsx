@@ -19,13 +19,13 @@ const Footer = () => {
       <div className="icons">
         <div className="iconsSocialNetworks">
           <div>
-            <img src={iconeInsta} alt="icone Instagram Footer" />
+            <a href="https://instagram.com/symbee_ofc"><img src={iconeInsta} alt="ícone clicável do instagram" /></a>
           </div>
           <div>
-            <img src={iconeGit} alt="icone GitHub Footer" />
+            <a href="https://github.com/symbee"><img src={iconeGit} alt="ícone clicável do github" /></a>
           </div>
           <div>
-            <img src={iconeZap} alt="icone WhatsApp Footer" />
+            <img src={iconeZap} alt="ícone clicável do whatsapp"/>
           </div>
         </div>
       </div>

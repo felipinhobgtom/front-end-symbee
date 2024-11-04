@@ -3,21 +3,13 @@
 /* Estilo global */
 
 .footer {
-  background-image: linear-gradient(
-    to right,
-    #1a074e,
-    #220a64,
-    #290e7a,
-    #311392,
-    #3917aa
-  );
   color: #fff;
   display: flex;
   align-items: center;
   justify-content: center;
   flex-direction: column;
   width: 100%;
-  height: 505px;
+  height: 100%;
   gap: 5px;
   list-style: 1.5;
   padding: 20px;
@@ -59,19 +51,23 @@
 }
 
 .icons {
+  display: flex;
+  align-items: center;
+  justify-content: center;
   width: 180px;
   height: 60px;
+  padding: 5px;
   background-color: #270a62;
   border-radius: 10px;
+  margin-bottom: 15px;
 }
 
 .iconsSocialNetworks {
   display: flex;
-  width: 100%;
-  height: 100%;
+  flex-direction: row;
   align-items: center;
   justify-content: space-evenly;
-  flex-direction: row;
+  width: 100%;
 }
 
 .iconsSocialNetworks img {
@@ -82,7 +78,8 @@
 .FooterContents,
 .footer h3 {
   display: flex;
-  width: 700px;
+  flex-wrap: wrap;
+  width: 100%;
   height: 300px;
   margin: auto;
   align-items: center;

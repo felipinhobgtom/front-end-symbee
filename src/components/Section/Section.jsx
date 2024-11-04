@@ -29,6 +29,8 @@ function Secao() {
               flexDirection: "column",
               height: "65px",
               borderRadius: "0 20px 0 20px",
+              fontWeight: '700',
+              padding: '0 30px'
             }}
           >
             Conhecer agora! <i class="fa-solid fa-arrow-right"></i>

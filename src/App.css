@@ -20,6 +20,18 @@ body{
   );
 }
 
+.footer,
+.section-four{
+  background-image: linear-gradient(
+    to right,
+    #1a074e,
+    #220a64,
+    #290e7a,
+    #311392,
+    #3917aa
+  );
+}
+
 body::-webkit-scrollbar {
   display: none;
 }
@@ -68,12 +80,8 @@ img {
   .section-three {
     .membros {
       & .cartao {
-        scale: 0.95;
+        scale: 0.9;
       }
-    }
-
-    .membros::before {
-      max-block-size: 100%;
     }
   }
 
