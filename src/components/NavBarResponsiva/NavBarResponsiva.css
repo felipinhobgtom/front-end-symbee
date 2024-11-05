@@ -72,10 +72,11 @@ header .nav-bar {
 
 .btn-registrar button{
     border: 2px solid black;
-    font-weight: bold;
+    font-weight: bold;  
     padding: 10px 15px;
     border-radius: 5px;
     background-color: #3D1B11;
+    color: #eaeaea;
 }
 
 .login-button button a,
