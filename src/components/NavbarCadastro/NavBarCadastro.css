@@ -23,7 +23,6 @@ header .navbarRegister {
 
 /* Estilo da barra de navegação */
 
-
 /* Estilos para a lista de navegação */
 .navListRegister {
   display: flex;
@@ -76,63 +75,87 @@ header .navbarRegister {
 
 /* Estilos para a barra de navegação */
 .navbarRegister {
-    display: flex;
-    justify-content: flex-start;
-    padding: 1.5rem 1rem; 
-    width: 100%;
-    gap: 80vh;
+  display: flex;
+  padding: 1.5rem 1rem; 
+  width: 100%;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap; 
+}
+
+.TitleLinks {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 57.5%;
+}
+
+@media screen and (max-width: 1440px) {
+  .navbarRegister {
+    padding: 1rem;
+    gap: 15rem; /* Ajuste adicional para telas menores */
+  }
+
+  .TitleLinks {
+    
+    width: 64.5%;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+
+  .TitleLinks {
+    
+    width: 64.3%;
+  }
+  .navbarRegister {
+    gap: 1rem; 
+    padding: 0.5rem;
+  }
+}
+
+@media (min-width:834px) and (max-width:1024px){
+  .TitleLinks {
+    
+    width: 67.5%;
+  }
+}
+
+@media screen and (max-width: 834px) {
+
+  
+  .navbarRegister {
     flex-wrap: wrap; 
+    padding: 0.5rem;
   }
-  
-  @media screen and (max-width: 1440px) {
-    .navbarRegister {
-      justify-content: flex-start;
-      padding: 1rem;
-      gap: 25rem; /* Ajuste adicional para telas menores */
-    }
+  .navListRegister {
+    display: none; /* Esconder a lista de navegação em telas pequenas */
   }
-  
-  @media screen and (max-width: 1024px) {
-    .navbarRegister {
-      gap: 1rem; 
-      justify-content: flex-start;
-      gap: 25vh;
-      padding: 0.5rem;
-    }
+  .mobile-menu-icon-register {
+    display: block;
+    position: absolute;
+    right: 1rem; /* Fixar o ícone no canto direito */
   }
-  
-  @media screen and (max-width: 834px) {
-    .navbarRegister {
-      flex-wrap: wrap; 
-      justify-content: space-between;
-      padding: 0.5rem;
-    }
-    .navListRegister {
-      display: none; /* Esconder a lista de navegação em telas pequenas */
-    }
-    .mobile-menu-icon-register{
-        display: block;
-    }
+}
+
+@media screen and (max-width: 768px) {
+
+  .navbarRegister {
+    align-items: center;
+    padding: 0.5rem;
   }
+
   
-  @media screen and (max-width: 768px) {
-    .navbarRegister {
-      justify-content: space-between;
-      padding: 0.5rem;
-    }
-    .mobile-menu-icon-register {
-      display: block;
-      width: auto;
-      justify-content: flex-end; /* Alinha o ícone à direita */
-    }
+  .mobile-menu-icon-register {
+    display: block;
+    width: auto;
+    right: 1rem; /* Garantir que o ícone esteja alinhado à direita */
   }
-  
-  /* Ajuste específico para telas menores */
-  @media screen and (max-width: 412px) {
-    .navbarRegister {
-      gap: 1rem; /* Diminuir o gap ainda mais em telas muito pequenas */
-      padding: 0.5rem;
-      height: auto;
-    }
+}
+
+/* Ajuste específico para telas menores */
+@media screen and (max-width: 412px) {
+  .navbarRegister {
+    padding: 0.5rem;
   }
-  
+}
