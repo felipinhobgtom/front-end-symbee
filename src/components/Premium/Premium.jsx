@@ -24,19 +24,17 @@ const Premium = () => {
               </p>
             </div>
             <div className="garanta">
-              <h2>Apenas por R$ **,**</h2>
+              <h2>Apenas por R$ 39,90</h2>
               <button onClick={handleEnd}>Garanta já</button>
             </div>
           </div>
         </div>
         <div className="contentImage">
           <img src={Design} alt="image security" />
-          <div>
             <p>
               Nosso sistema de pagamento garante a total confiabilidade ao nosso
               usuário, todas as transações são rigorosamente verificadas!
             </p>
-          </div>
         </div>
         <div className="btnText text-white">
           <button onClick={handleEnd}>Não obrigado!</button>
