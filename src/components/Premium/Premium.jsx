@@ -29,10 +29,8 @@ const Premium = () => {
             </div>
           </div>
         </div>
-
         <div className="contentImage">
           <img src={Design} alt="image security" />
-
           <div>
             <p>
               Nosso sistema de pagamento garante a total confiabilidade ao nosso
@@ -40,7 +38,6 @@ const Premium = () => {
             </p>
           </div>
         </div>
-
         <div className="btnText text-white">
           <button onClick={handleEnd}>Não obrigado!</button>
         </div>

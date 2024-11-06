@@ -1,7 +1,7 @@
 import { useNavigate } from "react-router-dom";
 import "./Tags.css";
-import IconeLupaPreta from "./img/iconeLupaPreta.png";
 import React from "react";
+import Lupasvg from "./img/lupasvg";
 
 const Tags = () => {
   const navegar = useNavigate();
@@ -10,7 +10,7 @@ const Tags = () => {
   };
 
   return (
-    <section>
+    <section id="tags">
       <div className="tagsPage">
         <div className="layoutTags">
           <div className="tagsTitle">
@@ -20,11 +20,9 @@ const Tags = () => {
             <p>Seja o mais específico possível.</p>
           </div>
           <div className="search">
-            <img
-              src={IconeLupaPreta}
-              alt="icone de luva para pesquisa"
-              class="input-icon"
-            />
+            <div className="input-icon">
+              <Lupasvg />
+            </div>
             <input type="text" placeholder="Outra..." class="input-field" />
           </div>
           <div className="tagsLanguages">
