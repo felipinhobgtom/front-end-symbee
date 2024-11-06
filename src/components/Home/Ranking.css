@@ -1,0 +1,53 @@
+/* .ranking {
+    max-width: 450px;
+    background-color: white;
+    border: 7px solid #e6e6e6;
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 35px 0px;
+    margin: 10px 0 0 10px;
+
+    & .layoutRanking {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        
+        & .titleRanking h1{
+            font-weight: 700;
+        }
+        & .numberRanking{
+            display: flex;
+            
+            flex-direction: column;
+            
+            background-color: aquamarine;
+            
+            
+            & .positionFirst{
+                display: flex;
+               
+                flex-direction: row; 
+                gap: 1rem; 
+            
+                & #nameUser p{
+                    justify-content: center;
+
+                    display: flex;
+                    height: 100%;
+                    background-color: red;
+                }
+                & #decorationFirst p{
+                    font-size: 1.5rem;
+
+                }
+            }
+
+        }
+    }
+
+
+} */
