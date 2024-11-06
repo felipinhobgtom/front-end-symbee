@@ -16,28 +16,30 @@ const NavBarCadastro = () => {
     <>
       <header>
         <nav className="navbarRegister">
-          <div className="imageLogoRegister">
-            <img src={vetorLaranja} alt="Logo da SymBee" />
-            <div className="navbarBrandRegister">Symbee</div>
-          </div>
-          <div className="navListRegister">
-            <ul>
-              <li className="navItemRegister">
-                <a href="#" className="navLinkRegister">
-                  Início
-                </a>
-              </li>
-              <li className="navItemRegister">
-                <a href="#" className="navLinkRegister">
-                  Projetos
-                </a>
-              </li>
-              <li className="navItemRegister">
-                <a href="#" className="navLinkRegister">
-                  Sobre
-                </a>
-              </li>
-            </ul>
+          <div className="TitleLinks">
+            <div className="imageLogoRegister">
+              <img src={vetorLaranja} alt="Logo da SymBee" />
+              <div className="navbarBrandRegister">Symbee</div>
+            </div>
+            <div className="navListRegister">
+              <ul>
+                <li className="navItemRegister">
+                  <a href="#" className="navLinkRegister">
+                    Início
+                  </a>
+                </li>
+                <li className="navItemRegister">
+                  <a href="#" className="navLinkRegister">
+                    Projetos
+                  </a>
+                </li>
+                <li className="navItemRegister">
+                  <a href="#" className="navLinkRegister">
+                    Sobre
+                  </a>
+                </li>
+              </ul>
+            </div>
           </div>
           <div className="mobile-menu-icon-register">
             <button onClick={toggleMenuRegister}>
