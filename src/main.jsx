@@ -12,7 +12,8 @@ import Bio from "./components/Bio/Bio";
 import Tags from "./components/tags/tags";
 import FimJornada from "./components/FimJornada/FimJornada";
 import Armario from "../Armario";
-import Home from './components/Home/Home'
+// import Home from "./components/Home/Home";
+import Ranking from "./components/Home/ranking";
 
 createRoot(document.getElementById("root")).render(
   <Router>
@@ -28,7 +29,8 @@ createRoot(document.getElementById("root")).render(
         <Route path="/bio" element={<Bio />} />
         <Route path="/tag" element={<Tags />} />
         <Route path="/end" element={<FimJornada />} />
-        <Route path="/home" element={<Home />} />
+        {/* <Route path="/home" element={<Home />} /> */}
+        <Route path="/ranking" element={<Ranking />} />
       </Route>
     </Routes>
   </Router>
