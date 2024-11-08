@@ -13,7 +13,7 @@ import Tags from "./components/tags/tags";
 import FimJornada from "./components/FimJornada/FimJornada";
 import Armario from "../Armario";
 // import Home from "./components/Home/Home";
-import Ranking from "./components/Home/ranking";
+import Ranking from "./components/Home/Ranking/Ranking";
 
 createRoot(document.getElementById("root")).render(
   <Router>
