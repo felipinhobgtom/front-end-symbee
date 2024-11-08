@@ -23,7 +23,43 @@ const Ranking = () => {
           </div>
         </div>
         <div className="numberRanking">
-          <div>1</div>
+          <div>2</div>
+          <div>
+            <p>.</p>
+          </div>
+          <div>
+            <Bee />
+          </div>
+          <div>
+            <p>Kay_bonjour</p>
+          </div>
+        </div>
+        <div className="numberRanking">
+          <div>3</div>
+          <div>
+            <p>.</p>
+          </div>
+          <div>
+            <Bee />
+          </div>
+          <div>
+            <p>Kay_bonjour</p>
+          </div>
+        </div>
+        <div className="numberRanking">
+          <div>4</div>
+          <div>
+            <p>.</p>
+          </div>
+          <div>
+            <Bee />
+          </div>
+          <div>
+            <p>Kay_bonjour</p>
+          </div>
+        </div>
+        <div className="numberRanking">
+          <div>5</div>
           <div>
             <p>.</p>
           </div>
