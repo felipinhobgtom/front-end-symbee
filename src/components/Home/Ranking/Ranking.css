@@ -1,0 +1,76 @@
+.ranking {
+  max-width: 450px;
+  background-color: white;
+  border: 7px solid #e6e6e6;
+  border-radius: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  padding: 35px 0px;
+  margin: 10px 0 0 10px;
+
+  & .layoutRanking {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 15px;
+
+    & .titleRanking h1 {
+      font-weight: 700;
+    }
+
+    & .see-all span {
+      position: relative;
+      color: #eaeaea;
+      background: #1e1d1d;
+      font-size: 15px;
+      font-weight: 600;
+      border-radius: 20px;
+      z-index: 1;
+      padding: 10px 30px;
+    }
+
+    & .see-all span::after,
+    .see-all span::before {
+      content: "";
+      position: absolute;
+      background-image: conic-gradient(
+        from var(--angle),
+        #2800b1,
+        #7100b2,
+        #2800b1
+      );
+      z-index: -1;
+      height: 100%;
+      width: 102%;
+      top: 50%;
+      left: 50%;
+      translate: -50% -50%;
+      padding: 22.2px;
+      border-radius: 30px;
+      animation: 3s spin linear infinite;
+    }
+
+    .see-all::before {
+      filter: blur(1rem);
+      opacity: 0.7;
+    }
+  }
+}
+
+@property --angle {
+  syntax: "<angle>";
+  initial-value: 0deg;
+  inherits: false;
+}
+
+@keyframes spin {
+  from {
+    --angle: 0deg;
+  }
+  to {
+    --angle: 360deg;
+  }
+}
