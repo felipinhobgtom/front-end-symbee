@@ -87,7 +87,7 @@
           height: 100%;
           font-weight: 700;
           text-align: center;
-          font-size: 1.5vw;
+          font-size: 2vw;
         }
 
         & .garanta {
@@ -109,7 +109,7 @@
             background-color: #ee9b11;
             height: 5vh;
             border-radius: 3vh;
-            font-size: 2.5vh;
+            font-size: 1.5vw;
             font-weight: bold;
             color: black;
           }

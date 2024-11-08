@@ -1,0 +1,16 @@
+.numberRanking {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  gap: 5%;
+
+  & p,
+  .colocacao {
+    font-weight: 700;
+    margin: 0;
+  }
+
+  & #dot {
+    transform: scale(0.25);
+  }
+}
