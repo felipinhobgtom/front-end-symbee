@@ -14,6 +14,7 @@ import FimJornada from "./components/FimJornada/FimJornada";
 import Armario from "../Armario";
 // import Home from "./components/Home/Home";
 import Ranking from "./components/Home/Ranking/Ranking";
+import Feed from "./components/Home/Feed";
 
 createRoot(document.getElementById("root")).render(
   <Router>
@@ -31,6 +32,7 @@ createRoot(document.getElementById("root")).render(
         <Route path="/end" element={<FimJornada />} />
         {/* <Route path="/home" element={<Home />} /> */}
         <Route path="/ranking" element={<Ranking />} />
+        <Route path="/Feed" element={<Feed />} />
       </Route>
     </Routes>
   </Router>
