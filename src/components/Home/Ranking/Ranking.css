@@ -21,6 +21,10 @@
       font-weight: 700;
     }
 
+    & .see-all{
+      cursor: pointer;
+    }
+
     & .see-all span {
       position: relative;
       color: #eaeaea;
@@ -44,17 +48,17 @@
       );
       z-index: -1;
       height: 100%;
-      width: 102%;
+      width: 104%;
       top: 50%;
       left: 50%;
       translate: -50% -50%;
-      padding: 22.2px;
+      padding: 23px;
       border-radius: 30px;
       animation: 3s spin linear infinite;
     }
 
-    .see-all::before {
-      filter: blur(1rem);
+    .see-all span::before {
+      filter: blur(0.7rem);
       opacity: 0.7;
     }
   }
