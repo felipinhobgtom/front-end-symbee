@@ -1,14 +1,19 @@
+
+
 .ranking {
   max-width: 450px;
   background-color: white;
   border: 7px solid #e6e6e6;
   border-radius: 20px;
   display: flex;
-  align-items: center;
+  align-items: start;
   justify-content: center;
   flex-direction: column;
-  padding: 35px 0px;
-  margin: 10px 0 0 10px;
+  padding: 30px 0px;
+  margin: 10px 0px 0px 5px;
+  position: sticky;
+  top: 0;
+  height: 100%;
 
   & .layoutRanking {
     display: flex;
@@ -16,12 +21,17 @@
     justify-content: center;
     flex-direction: column;
     gap: 15px;
+    padding: 3vh;
 
-    & .titleRanking h1 {
+    & #titleRanking {
+      width: 100%;
+      font-size: 3vh;
       font-weight: 700;
+      display: flex;
+      justify-content: center;
     }
 
-    & .see-all{
+    & .see-all {
       cursor: pointer;
     }
 

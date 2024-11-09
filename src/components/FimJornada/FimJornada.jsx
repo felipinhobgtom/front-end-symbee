@@ -7,7 +7,7 @@ const FimJornada = () => {
   const navegarParaHome = useNavigate();
 
   const handleEnd = () => {
-    navegarParaHome("/Ranking");
+    navegarParaHome("/Home");
   };
   return (
     <section className="EndPage">

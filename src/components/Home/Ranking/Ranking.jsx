@@ -6,7 +6,7 @@ const Ranking = () => {
   return (
     <section className="ranking">
       <div className="layoutRanking">
-        <h1 className="titleRanking">Ranking Mensal</h1>
+        <h1 id="titleRanking">Ranking Mensal</h1>
         <div className="users-ranking">
           <Num
             nome="Kay_bonjour"

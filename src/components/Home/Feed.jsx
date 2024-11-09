@@ -1,11 +1,13 @@
 import "./Feed.css";
-import Bee from "./assets/Bee";
+import Bee from "./assets/Bee.jsx";
 import React from "react";
 import Kay from "./img/kay.png";
 import PaperPlane from "./img/aviãoDePapel.png";
 import Heart from "./img/Coração.png";
 import Ballon from "./img/balão.png";
 import Verify from "./img/verify.png";
+import Flag from "./img/bandeira.webp"
+import Ehxis from "./img/ehxis.png"
 
 const Feed = () => {
   return (
@@ -14,7 +16,7 @@ const Feed = () => {
         <div className="post">
           <div className="postHeader">
             <div className="imagePerfil">
-              <Bee />
+              <Bee stroke="#000000" />
             </div>
             <div className="namePerfil">
               <p>Kay_boujour</p>
@@ -35,24 +37,57 @@ const Feed = () => {
                 <img src={PaperPlane} alt="icone de avião de papel" />
               </div>
               <div className="rightIcon">
-                {/* Se precisar de ícone adicional, adicione aqui */}
+                <img src={Flag} alt="icone de Bandeira" />
               </div>
             </div>
             <div className="coments">
               <div className="nameComents">
                 <p>Kay_bonjour</p>
-                <img src={Verify} alt="icone de verificado" className="verificatedIcon" />
+                <img
+                  src={Verify}
+                  alt="icone de verificado"
+                  className="verificatedIcon"
+                />
               </div>
               <div className="comentsText">
                 <p>
-                  Muito feliz de seguir em primeiro, gratidão a deus e a frase é:
-                  “9,5 não me contenta quero o maldito primeiro lugar do pódio”.
-                  #TantasBrigasSemNescessidade
+                  Muito feliz de seguir em primeiro, gratidão a deus e a frase
+                  é: “9,5 não me contenta quero o maldito primeiro lugar do
+                  pódio”. #TantasBrigasSemNescessidade
                 </p>
               </div>
             </div>
             <div className="moreComents">
               <p>Ver todos os 1250 comentários</p>
+            </div>
+          </div>
+        </div>
+        <div className="post">
+          <div className="postHeader">
+            <div className="imagePerfil">
+              <Bee stroke=" blue" />
+            </div>
+            <div className="namePerfil">
+              <p>KyanMaloca</p>
+            </div>
+            <div className="decorationNamePerfil">
+              <p>.</p>
+            </div>
+            <div className="explication">
+              <p>Atingiu o segundo lugar no ranking!</p>
+            </div>
+          </div>
+          <div className="publication">
+            <img src={Ehxis} alt="Imagem exemplo de uma publicação" />
+            <div className="iconComents">
+              <div className="leftIcons">
+                <img src={Heart} alt="icone de coração" />
+                <img src={Ballon} alt="icone de balão de diálogo" />
+                <img src={PaperPlane} alt="icone de avião de papel" />
+              </div>
+              <div className="rightIcon">
+                <img src={Flag} alt="icone de Bandeira" />
+              </div>
             </div>
           </div>
         </div>

@@ -12,8 +12,8 @@
     #c7bd9e,
     #bcb296
   );
-  height: 100vh;
 
+  
   & .layout {
     display: flex;
     width: 100%;
@@ -58,26 +58,29 @@
         text-decoration: underline;
       }
 
-      & .register button {
-        width: 30%;
-        height: 9.5vh;
-        box-shadow: 3px -5px 0px 2px #7e6f16;
-        background-image: linear-gradient(
-          to right,
-          #f9d504,
-          #f8d403,
-          #f7c701,
-          #efa20f
-        );
-        color: rgb(0, 0, 0);
-        border: none;
-        border-radius: 10px;
-        font-size: 1.8em;
-        font-weight: bold;
-        cursor: pointer;
-        margin-top: 2vh;
+      & .register {
+        display: flex;
+        justify-content: center;
+        & button {
+          width: 50%;
+          height: 9.5vh;
+          box-shadow: 3px -5px 0px 2px #7e6f16;
+          background-image: linear-gradient(
+            to right,
+            #f9d504,
+            #f8d403,
+            #f7c701,
+            #efa20f
+          );
+          color: rgb(0, 0, 0);
+          border: none;
+          border-radius: 10px;
+          font-size: 1.8em;
+          font-weight: bold;
+          cursor: pointer;
+          margin-top: 2vh;
+        }
       }
-
       & .checkbox {
         display: flex;
         align-items: center;

@@ -16,7 +16,7 @@ function Home() {
           
           <div className="profile">
             <div className="profile-picture">
-              <Bee />
+              <Bee stroke="#000000"/>
             </div>
             <div className="profile-info">
               <span id="nickname">Kay_bonjour</span>
@@ -58,21 +58,6 @@ function Home() {
               <i className="fa-solid fa-magnifying-glass"></i> Busque projetos com a Bee!
             </span>
           </a>
-
-          <div className="user-description">
-            <hr className="w-48 h-1 my-4 bg-gray-100 border-0 rounded md:my-10 dark:bg-gray-700" />
-            <h2>Descrição do perfil</h2>
-            <p>
-              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sequi
-              aliquam ad quibusdam! Earum assumenda corrupti ab alias quo saepe
-              accusamus nulla quaerat deleniti aliquid cupiditate eius, doloribus
-              placeat dolor qui?
-            </p>
-            
-          </div>
-
-          <div className="feed"></div>
-          <div className="ranking"></div>
         </div>
       </section>
     </>
