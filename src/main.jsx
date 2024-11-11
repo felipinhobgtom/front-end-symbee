@@ -15,6 +15,7 @@ import Armario from "../Armario";
 import ArmarioHome from "./ArmarioHome";
 // import MenuLateralPerfil from "./components/Perfil/MenuLateral/MenuLateralPerfil";
 import ConteudoPerfil from "./components/Perfil/Conteudo/ConteudoPerfil";
+import Statistics from "./components/Perfil/Estatística/Statistics";
 
 
 createRoot(document.getElementById("root")).render(
@@ -33,6 +34,7 @@ createRoot(document.getElementById("root")).render(
         <Route path="/end" element={<FimJornada />} />
         <Route path="/home" element={<ArmarioHome />} />
         <Route path="/perfil" element={<ConteudoPerfil />} />
+        <Route path="/dev" element={<Statistics />} />
       </Route>
     </Routes>
   </Router>
