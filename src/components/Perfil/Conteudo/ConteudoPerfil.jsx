@@ -68,7 +68,7 @@ const ConteudoPerfil = () => {
               <div className="users">
                 <p id="nameuser">KyanMaloca</p>
                 <p id="decorationUser">.</p>
-                <p id="userDialogue">Esse cara é brabo demais!</p>
+                <p id="userDialogue">Me tira uma dúvida?</p>
               </div>
             </div>
             <div className="userFriends">
@@ -96,13 +96,53 @@ const ConteudoPerfil = () => {
         <div className="projects">
           <h1>Projetos</h1>
           <div className="project">
-            <div className="NameAndCondition">
+            <div className="nameAndCondition">
               <div><h2>Byfron</h2></div>
               <div><p>Public</p></div>
             </div>
             <div className="TimeAndStars">
               <div><p>há 4 dias</p></div>
-              <div><i className="fa fa-star" aria-hidden="true"></i> <p id="number rating">4.5</p> <p>rating</p> </div>
+              <div className="layoutStars"><i className="fa fa-star" aria-hidden="true"></i> <p id="numberRating">4.5</p> <p>rating</p> </div>
+            </div>
+          </div>
+          <div className="project">
+            <div className="nameAndCondition">
+              <div><h2>RC7</h2></div>
+              <div><p>Public</p></div>
+            </div>
+            <div className="TimeAndStars">
+              <div><p>há 2 semanas</p></div>
+              <div className="layoutStars"><i className="fa fa-star" aria-hidden="true"></i> <p id="numberRating">5</p> <p>rating</p> </div>
+            </div>
+          </div>
+          <div className="project">
+            <div className="nameAndCondition">
+              <div><h2>Synapse</h2></div>
+              <div><p>Public</p></div>
+            </div>
+            <div className="TimeAndStars">
+              <div><p>há 2 semanas</p></div>
+              <div className="layoutStars"><i className="fa fa-star" aria-hidden="true"></i> <p id="numberRating">3.8</p> <p>rating</p> </div>
+            </div>
+          </div>
+          <div className="project">
+            <div className="nameAndCondition">
+              <div><h2>Scriptware</h2></div>
+              <div><p>Public</p></div>
+            </div>
+            <div className="TimeAndStars">
+              <div><p>há 4 meses</p></div>
+              <div className="layoutStars"><i className="fa fa-star" aria-hidden="true"></i> <p id="numberRating">2</p> <p>rating</p> </div>
+            </div>
+          </div>
+          <div className="project">
+            <div className="nameAndCondition">
+              <div><h2>PhotoSma..</h2></div>
+              <div><p>Public</p></div>
+            </div>
+            <div className="TimeAndStars">
+              <div><p>há 1 ano</p></div>
+              <div className="layoutStars"><i className="fa fa-star" aria-hidden="true"></i> <p id="numberRating">0</p> <p>rating</p> </div>
             </div>
           </div>
         </div>

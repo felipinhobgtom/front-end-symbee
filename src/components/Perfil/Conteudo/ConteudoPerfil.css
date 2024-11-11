@@ -15,24 +15,66 @@
     flex-direction: row;
     justify-content: space-between;
 
-    & .projects{
+    & .projects {
       width: 25%;
       display: flex;
       flex-direction: column;
       align-items: center;
+      padding: 2vh;
+      gap: 2vh;
 
-      & h1{
+      & h1 {
         font-size: 2.5rem;
         color: #7100b2;
         font-weight: 600;
       }
 
-      & .NameAndCondition{
+      & .project {
         display: flex;
         width: 100%;
-        flex-direction: row;
+        flex-direction: column;
         align-items: center;
-        justify-content: space-between;
+
+        & .nameAndCondition {
+          display: flex;
+          width: 100%;
+          flex-direction: row;
+          justify-content: space-between;
+
+          & h2 {
+            color: #2800b1;
+            font-weight: 640;
+          }
+
+          & p {
+            border: 1px solid #666666;
+            border-radius: 30px;
+            padding: 4px;
+          }
+        }
+        & .TimeAndStars {
+          display: flex;
+          width: 100%;
+          flex-direction: row;
+          justify-content: space-between;
+
+          & .layoutStars {
+            display: flex;
+            gap: 1vh;
+
+            & p {
+              color: #666666;
+            }
+
+            & i {
+              color: #f9d504;
+            }
+
+            & #numberRating {
+              color: #2800B1;
+            }
+          }
+        }
       }
     }
   }
@@ -52,13 +94,25 @@
 
     & .ExprerienceUser {
       display: flex;
+      width: 100%;
+      height: 3vh;
+      align-items: center;
+      justify-content: center;
       flex-direction: column;
 
       & .UserProgressBar {
         width: 100%;
-        height: 1vh;
-        color: BLACK;
-        margin: auto;
+        height: 1.5vh;
+        background-color: #CACACA;
+        border-radius: 20px;
+        box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.5);
+
+        & .ProgressBarpercentage{
+          width: 80%;
+          height: 100%;
+          background-color: #7100b2;
+          border-radius: 20px;
+        }
       }
     }
     & .level {
@@ -104,7 +158,7 @@
     & .skills {
       display: flex;
       flex-direction: row;
-      gap: 1vh;
+      gap: 2vh;
 
       & .titleSkills {
         & h2 {
@@ -127,11 +181,13 @@
     .Classification {
       display: flex;
       flex-direction: column;
+      
       & .ClassificationTitle {
         display: flex;
         justify-content: center;
         flex-direction: column;
         align-items: center;
+        gap: 1vh;
 
         & h2 {
           font-size: 3vh;
@@ -155,7 +211,7 @@
         }
       }
     }
-    .ComentsUserProfile{
+    .ComentsUserProfile {
       display: flex;
       flex-direction: column;
       align-items: center;
@@ -167,12 +223,9 @@
         font-weight: 600;
         text-align: center;
       }
-
-      }
-
     }
   }
-
+}
 
 & .levelCamp span::after,
 .levelCamp span::before {
@@ -201,8 +254,6 @@
   filter: blur(0.3rem);
   opacity: 0.5;
 }
-
-
 
 .ComentsUserProfile {
   display: flex;
