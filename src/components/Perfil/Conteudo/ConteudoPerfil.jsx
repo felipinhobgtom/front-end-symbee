@@ -1,5 +1,6 @@
 import React from "react";
 import Bee from "../MenuLateral/assets/Bee";
+import Statistics from "../Estatística/Statistics";
 import "./ConteudoPerfil.css";
 
 const ConteudoPerfil = () => {
@@ -54,7 +55,8 @@ const ConteudoPerfil = () => {
                 <i className="fa fa-star" aria-hidden="true"></i>
                 <i className="fa fa-star" aria-hidden="true"></i>
                 <i className="fa fa-star" aria-hidden="true"></i>
-                <i className="fa fa-star" aria-hidden="true"></i> <p>5</p>
+                <i className="fa fa-star" aria-hidden="true"></i>
+                <p id="numberStar">5</p>
               </div>
             </div>
           </div>
@@ -62,21 +64,47 @@ const ConteudoPerfil = () => {
           <div className="ComentsUserProfile">
             <h2>Comentários</h2>
             <div className="userFriends">
-              <Bee stroke="purple" />{" "}
+              <Bee stroke="#7100B2" />{" "}
               <div className="users">
                 <p id="nameuser">KyanMaloca</p>
                 <p id="decorationUser">.</p>
                 <p id="userDialogue">Esse cara é brabo demais!</p>
               </div>
             </div>
-            {/* ---------/--------- */}
+            <div className="userFriends">
+              <Bee stroke="#3D1B11" />{" "}
+              <div className="users">
+                <p id="nameuser">CactusJack</p>
+                <p id="decorationUser">.</p>
+                <p id="userDialogue">Seus projetos são incriveis!</p>
+              </div>
+            </div>
+            <div className="userFriends">
+              <Bee stroke="#EE9B11" />{" "}
+              <div className="users">
+                <p id="nameuser">Takeshi_SixNine</p>
+                <p id="decorationUser">.</p>
+                <p id="userDialogue">muito bom!</p>
+              </div>
+            </div>
           </div>
+          {/* ---------/--------- */}
         </div>
         <div>
-          <h1>GRAFICOS</h1>
+          <Statistics />
         </div>
-        <div>
-          <h1>PROJETOS</h1>
+        <div className="projects">
+          <h1>Projetos</h1>
+          <div className="project">
+            <div className="NameAndCondition">
+              <div><h2>Byfron</h2></div>
+              <div><p>Public</p></div>
+            </div>
+            <div className="TimeAndStars">
+              <div><p>há 4 dias</p></div>
+              <div><i className="fa fa-star" aria-hidden="true"></i> <p id="number rating">4.5</p> <p>rating</p> </div>
+            </div>
+          </div>
         </div>
       </div>
     </div>
