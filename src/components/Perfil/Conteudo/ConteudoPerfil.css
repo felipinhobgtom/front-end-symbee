@@ -1,0 +1,114 @@
+.ContentsProfileUnique {
+  display: flex;
+  margin: 10px;
+  width: 1500px;
+  background-color: white;
+  border: 4px solid #dcdcdc;
+  border-radius: 30px;
+  padding: 2vh;
+  box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.5);
+
+  & .layoutProfileUnique {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  & .UserThings {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    & h1 {
+      font-size: 2.5rem;
+      color: #7100b2;
+      font-weight: 600;
+    }
+
+    & .ExprerienceUser {
+      display: flex;
+      flex-direction: column;
+
+      & .UserProgressBar {
+        width: 100%;
+        height: 1vh;
+        color: BLACK;
+        margin: auto;
+      }
+    }
+    & .level {
+      display: flex;
+      width: 100%;
+      gap: 1vh;
+      align-items: center;
+      justify-content: center;
+
+      & .levelCamp {
+        display: flex;
+        flex-direction: row;
+        position: relative;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 30px;
+        
+        position: sticky;
+
+        & span{
+            background: #f9d504;
+            padding: 4px 10px;
+            border-radius: 30px;
+            color: black;
+            font-weight: bold; 
+
+            
+        }
+      }
+
+      & .count {
+        display: flex;
+        height: 100%;
+        justify-content: center;
+        align-items: center;
+        gap: 1vh;
+
+        & #numbers {
+          color: #7100b2;
+          font-weight: 600;
+        }
+      }
+    }
+  }
+}
+
+
+
+  & .levelCamp span::after ,
+  .levelCamp span::before {
+    display: block;
+    position: absolute;
+    content: "";
+    top: 50%;
+    left: 50%;
+    translate: -50% -50%;
+    width: 106%;
+    height: 100%;
+    background-image: conic-gradient(
+      from var(--angle),
+      #ee9b11,
+      #2800b1,
+      #7100b2,
+      #ee9b11
+    );
+    padding: 18px;
+    border-radius: 50px;
+    z-index: -1;
+    animation: 3s spin linear infinite;
+  }
+
+  .levelCamp span::before {
+    filter: blur(0.3rem);
+    opacity: 0.5;
+  }
+
