@@ -7,6 +7,7 @@ import Section4 from "./components/Section 4/Section4";
 import Footer from "./components/footer/Footer";
 import NavBarResponsiva from "./components/NavBarResponsiva/NavBarResponsiva";
 
+
 function LandingPage() {
   // const handleFileUpload = (files) => {
   //   console.log('Arquivos carregados:', files);

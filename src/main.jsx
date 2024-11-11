@@ -13,6 +13,8 @@ import Tags from "./components/tags/tags";
 import FimJornada from "./components/FimJornada/FimJornada";
 import Armario from "../Armario";
 import ArmarioHome from "./ArmarioHome";
+// import MenuLateralPerfil from "./components/Perfil/MenuLateral/MenuLateralPerfil";
+import ConteudoPerfil from "./components/Perfil/Conteudo/ConteudoPerfil";
 
 
 createRoot(document.getElementById("root")).render(
@@ -30,6 +32,7 @@ createRoot(document.getElementById("root")).render(
         <Route path="/tag" element={<Tags />} />
         <Route path="/end" element={<FimJornada />} />
         <Route path="/home" element={<ArmarioHome />} />
+        <Route path="/perfil" element={<ConteudoPerfil />} />
       </Route>
     </Routes>
   </Router>
