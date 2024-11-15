@@ -14,7 +14,7 @@ function Linguagem(props) {
       <span id="percentage">{props.porcentagem}</span>
     </>
   );
-}
+}   
 
 function Statistics() {
   const linguas = [
