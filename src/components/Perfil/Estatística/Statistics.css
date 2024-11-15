@@ -8,7 +8,23 @@
   background-color: #fff;
   border: 5px solid rgba(0, 0, 0, 0.1);
   border-radius: 20px;
-  gap: 3px;
+  gap: 1vh;
+  width: 50vh;
+  height: 80vh;
+  box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.5);
+
+  & .social-media{
+
+    & .account{
+      display: flex;
+      justify-content: space-between;
+      gap: 2rem;
+
+      & .username{
+        padding: 0 20px;
+      }
+    }
+  }
 
   & span {
     font-weight: 600;
@@ -20,8 +36,9 @@
   }
 
   & h2 {
-    font-size: 20px;
-    font-weight: 700;
+    font-size: 3vh;
+          color: #7100B2;
+          font-weight: 600;
   }
 
   .status {
