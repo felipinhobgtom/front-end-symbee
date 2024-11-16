@@ -12,17 +12,14 @@ const NavBarResponsiva = () => {
   const toggleMenu = () => {
     setIsMenuOpen(!isMenuOpen);
   };
+  const navegar = useNavigate();
+  const handleCadastro = () => {
+    navegar("/Cadastro");
+  };
 
-  
-
-     const navegar = useNavigate();
-    const handleCadastro = () => {
-      navegar("/Cadastro");
-    };
-
-    const handleLogin = () => {
-      navegar("/Login");
-    }
+  const handleLogin = () => {
+    navegar("/Login");
+  };
 
   return (
     <>
@@ -30,7 +27,7 @@ const NavBarResponsiva = () => {
         <nav className="nav-bar">
           <div className="imageLogo">
             <img src={LogoNav} alt="Logo da SymBee" />
-            <div className="navbar-brand">Symbee</div>
+            <div className="navbar-brand">SymBee</div>
           </div>
           <div className="nav-list">
             <ul>
@@ -99,4 +96,3 @@ const NavBarResponsiva = () => {
   );
 };
 export default NavBarResponsiva;
-

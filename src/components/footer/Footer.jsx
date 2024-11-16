@@ -13,7 +13,7 @@ const Footer = () => {
           <img src={FooterLogo} alt="Logo Footer" />
         </div>
         <div className="FooterSymbee">
-          <h3>Symbee</h3>
+          <h3>SymBee</h3>
         </div>
       </div>
       <div className="icons">
