@@ -1,0 +1,105 @@
+.layoutchoice {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  height: 100vh;
+  background-image: radial-gradient(
+    circle,
+    #ede5b4,
+    #efe6ab,
+    #f1e6a3,
+    #f4e79a,
+    #f6e791
+  );
+}
+
+.contents {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  height: 100%;
+  padding: auto;
+  gap: 2.2rem;
+}
+
+.titleChoice h1 {
+  display: flex;
+  font-size: 1.5rem;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  margin: auto;
+  width: 70%;
+  height: 100%;
+  font-weight: bold;
+}
+
+.paragraphChoice p {
+  display: flex;
+  text-align: center;
+  font-weight: 400;
+  color: #877f55;
+}
+
+.choices {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 1rem;
+  width: 100%;
+}
+
+.choices button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 85%;
+  padding: 1.2rem 0;
+  border-radius: 60px;
+  border: 3px solid black;
+  color: black;
+  font-weight: 700;
+  gap: 10px;
+}
+
+.choices button p {
+  font-size: 1.3rem;
+  margin: 0;
+}
+
+.choices img {
+  width: 4vh;
+}
+
+.choices button:hover {
+  background-color: white;
+  transition: all ease-in-out 0.4s;
+}
+
+.buttonContinueArea {
+  display: flex;
+  width: 100%;
+  padding: 10px 0;
+  background-color: white;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+.Buttoncontinue {
+  align-items: center;
+  justify-content: center;
+  margin: 0 10px;
+}
+
+.buttonContinueArea button {
+  background-color: #ffa500;
+  border-radius: 3vh;
+  width: 18vh;
+  height: 6vh;
+  font-size: 2.5vh;
+  font-weight: bold;
+  border: 3px solid #ffa500;
+}

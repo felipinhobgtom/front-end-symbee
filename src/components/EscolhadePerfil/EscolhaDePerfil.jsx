@@ -1,4 +1,4 @@
-import "./EscolhaDePerfil.css";
+import styles from "./EscolhaDePerfil.module.css";
 import React from "react";
 import iconeLinkedin from "./img/iconeLinkedin.png";
 import iconeGitPreto from "./img/iconeGitPreto.png";
@@ -12,18 +12,18 @@ const EscolhaDePerfil = () => {
   };
 
   return (
-    <section className="layoutchoice">
-      <div className="contents">
-        <div className="titleChoice">
+    <section className={styles.layoutchoice}>
+      <div className={styles.contents}>
+        <div className={styles.titleChoice}>
           <h1>
             Antes de continuar, precisamos saber de algumas informações suas,
             como quer mostrar elas?
           </h1>
         </div>
-        <div className="paragraphChoice">
+        <div className={styles.paragraphChoice}>
           <p>Para fornecer as melhores propostas, é vital te conhecermos.</p>
         </div>
-        <div className="choices">
+        <div className={styles.choices}>
           <button>
             <img src={iconeLinkedin} alt="icon Linkedin" />
             <p>Importar do Linkedin</p>
@@ -38,8 +38,8 @@ const EscolhaDePerfil = () => {
           </button>
         </div>
       </div>
-      <div className="buttonContinueArea">
-        <div className="Buttoncontinue">
+      <div className={styles.buttonContinueArea}>
+        <div className={styles.Buttoncontinue}>
           <button onClick={handleCargo}>Continuar</button>
         </div>
       </div>
