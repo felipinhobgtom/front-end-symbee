@@ -1,5 +1,5 @@
 import React from "react";
-import "./CargoEstudante.css";
+import styles from "./CargoEstudante.module.css";
 import iconeSetaEsquerda from "./img/iconeSetaEsquerda.png";
 import { useNavigate } from "react-router-dom";
 
@@ -19,33 +19,33 @@ const CargoEstudante = () => {
 
   return (
     <section>
-      <div className="PositionContainer">
-        <div className="LayoutContainer">
-          <div className="TitleContainer">
+      <div className={styles.PositionContainer}>
+        <div className={styles.LayoutContainer}>
+          <div className={styles.TitleContainer}>
             <h1>
               Olá, usuário! finalize as informações para deixar seu perfil mais
               atraente!
             </h1>
           </div>
-          <div className="SubtitleContainer">
+          <div className={styles.SubtitleContainer}>
             <p>Qual é a sua instituição de ensino?</p>
           </div>
-          <div className="ContentContainer">
+          <div className={styles.ContentContainer}>
             Instituição de Ensino
-            <div className="InputWrapper">
+            <div className={styles.InputWrapper}>
               <input
                 type="text"
                 placeholder="Informe onde você está estudando"
               />
             </div>
             Conclusão
-            <div className="InputWrapper">
+            <div className={styles.InputWrapper}>
               <input
                 type="text"
                 placeholder="Quando você irá obter seu certificado?"
               />
             </div>
-            <div className="buttonEmpregado">
+            <div className={styles.buttonEmpregado}>
               <button onClick={handleCargo}>
                 <img src={iconeSetaEsquerda} alt="icon seta para esuqerdda" />
                 Empregado <br />
@@ -54,11 +54,11 @@ const CargoEstudante = () => {
           </div>
         </div>
       </div>
-      <div className="moveButtons">
-        <div className="BackButton">
+      <div className={styles.moveButtons}>
+        <div className={styles.BackButton}>
           <button onClick={handleBack}>Voltar</button>
         </div>
-        <div className="ContinueButton">
+        <div className={styles.ContinueButton}>
           <button onClick={handleBio}>Continuar</button>
         </div>
       </div>

@@ -180,9 +180,4 @@ input::placeholder{
   .inputPosition input::placeholder {
     font-size: 0.8rem;
   }
-
-  .buttonContinue, .buttonBack{
-    width: 30%;
-    margin: auto;
-  }
 }
