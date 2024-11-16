@@ -64,6 +64,7 @@
           font-size: 1em;
           color: #333;
           flex-wrap: wrap;
+          min-width: 100%;
 
           & .terms-link:hover {
             text-decoration: underline;
@@ -152,7 +153,7 @@
 
           & button {
             display: flex;
-            width: 30vh;
+            max-width: 30vh;
             height: 9.5vh;
             align-items: center;
             justify-content: center;
@@ -184,9 +185,7 @@
           justify-content: center;
           flex-wrap: wrap;
 
-          & button {
-            width: 30%;
-            height: 9.5vh;
+          & a {
             box-shadow: 3px -5px 0px 2px #7e6f16;
             background-image: linear-gradient(
               to right,
@@ -206,10 +205,11 @@
             color: rgb(0, 0, 0);
             border: none;
             border-radius: 10px;
-            font-size: 1.8em;
+            font-size: 17px;
             font-weight: bold;
             cursor: pointer;
             margin-top: 2vh;
+            padding: clamp(20px, 20px, 20px);
           }
         }
       }
@@ -242,9 +242,11 @@
   .fieldInformations {
     margin: auto;
   }
-
   .checkbox {
     width: 100%;
+  }
+  .svgLogo img {
+    display: none;
   }
 }
 

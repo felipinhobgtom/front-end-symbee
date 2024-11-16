@@ -39,7 +39,7 @@ const Cadastro = () => {
               <p>Eu concordo com os termos de uso do usuário</p>
             </div>
             <div className="register">
-              <button onClick={handleProfileChoice}>Cadastrar-se</button>
+              <a id='cadastrar' onClick={handleProfileChoice}>Cadastrar-se</a>
             </div>
             <div className="social-buttons">
               <button onClick={handlePremium}>

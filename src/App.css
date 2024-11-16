@@ -11,17 +11,18 @@
   font-family: "Poppins", sans-serif;
 }
 
-body{
+p{
+  max-width: 100%;
+}
+
+.section-one,
+.nav-bar{
   background: rgb(238, 155, 17);
   background: linear-gradient(
-    97deg,
+    90deg,
     rgba(238, 155, 17, 1) 0%,
     rgba(136, 89, 10, 1) 80%
   );
-}
-
-p{
-  max-width: 100%;
 }
 
 .footer,

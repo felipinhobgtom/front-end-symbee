@@ -12,58 +12,27 @@
     #c7bd9e,
     #bcb296
   );
+  height: 100vh;
 
-  
   & .layout {
     display: flex;
-    width: 100%;
-    height: 100%;
     align-items: center;
-    justify-content: space-between;
-
-    & .LogoSvg {
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      width: 50%;
-      height: 100%;
-
-      & img {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-      }
-    }
+    justify-content: center;
+    gap: 15vw;
 
     & .fieldInformations {
       display: flex;
-      align-items: center;
-      justify-content: center;
       flex-direction: column;
-      margin-bottom: 10vh;
-      margin-left: 5vh;
-      width: 50%;
-      height: 100%;
-      padding: 2vh;
-      border-radius: 10px;
-
-      & .terms {
-        color: #ee9b11;
-        font-weight: bold;
-        margin-left: 5px;
-        text-decoration: none;
-      }
-
-      & .terms:hover {
-        text-decoration: underline;
-      }
-
-      & .register {
+      gap: 10px;
+      width: 40%;
+      
+      & .entrar {
         display: flex;
         justify-content: center;
+        align-items: center;
+        
         & button {
-          width: 50%;
-          height: 9.5vh;
+          padding: 2rem;
           box-shadow: 3px -5px 0px 2px #7e6f16;
           background-image: linear-gradient(
             to right,
@@ -78,7 +47,6 @@
           font-size: 1.8em;
           font-weight: bold;
           cursor: pointer;
-          margin-top: 2vh;
         }
       }
       & .checkbox {
@@ -86,11 +54,15 @@
         align-items: center;
         font-size: 1em;
         color: #333;
-        margin: 10vh;
+        margin: 3vh 0;
+
+        & p{
+          margin: 0 15px;
+        }
 
         & input[type="checkbox"] {
           appearance: none;
-          width: 20px;
+          min-width: 20px;
           height: 20px;
           border: 2px solid #ee9b11;
           border-radius: 3px;
@@ -121,120 +93,35 @@
         & input {
           background-color: #eaeaea;
           width: 100%;
-          height: 5vh;
           border: none;
           border-radius: 15px;
           color: #757575;
-          padding: 0 1vh;
+          padding: 1rem 10px;
           font-size: 1em;
           box-shadow: 4px 4px 15px rgba(0, 0, 0, 0.1);
           outline: none;
         }
       }
 
-      & .titleInf h2 {
-        align-items: center;
-        justify-content: center;
-        text-align: center;
-        width: 100%;
-        height: 10vh;
-        margin: 2vh;
-        display: flex;
-        color: #ff9d00;
-        font-size: 2em;
-        font-weight: bold;
+      & .titleInf {
+        min-width: 100%;
+        & h2 {
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          text-align: center;
+          color: #ff9d00;
+          font-size: 2rem;
+          width: 100%;
+          font-weight: bold;
+        }
       }
     }
   }
 }
 
-.checkbox label {
-  cursor: pointer;
-  color: #333;
-}
-
-/* Breakpoints */
-@media (max-width: 1880px) {
-  .LoginPage {
-    width: 100%;
-    height: 100%;
-  }
-  .fieldInformations {
-    width: 40%;
-  }
-}
-
-@media (max-width: 1440px) {
-  .LoginPage {
-    width: 100%;
-    height: 100%;
-  }
-  .fieldInformations {
-    width: 45%;
-  }
-}
-
-@media (max-width: 1024px) {
-  .LogoSvg {
+@media(max-width: 466px){
+  .LogoSvg{
     display: none;
-  }
-  .container-principal {
-    width: 100%;
-    padding: 0;
-  }
-  .sidebar {
-    display: none;
-  }
-  .input-field {
-    max-width: 100%;
-    padding: 0;
-  }
-}
-
-@media (max-width: 834px) {
-  .LoginPage {
-    width: 100%;
-    height: 100%;
-  }
-  .LogoSvg {
-    display: none;
-  }
-
-  .register button {
-    width: 40%;
-  }
-}
-
-@media (max-width: 768px) {
-  .LogoSvg {
-    display: none;
-  }
-
-  .fieldInformations {
-    width: 100%;
-  }
-
-  .register button {
-    width: 50%;
-  }
-}
-
-@media (max-width: 480px) {
-  .LoginPage {
-    height: 91vh;
-  }
-
-  .fieldInformations {
-    width: 100%;
-    padding: 1vh;
-  }
-
-  .outerInf input {
-    height: 7vh;
-  }
-
-  .register button {
-    width: 60%;
-    font-size: 1.5em;
   }
 }
