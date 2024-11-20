@@ -15,6 +15,7 @@ import Armario from "../Armario";
 import ArmarioHome from "./ArmarioHome";
 import ArmarioPerfil from "./ArmarioPerfil"
 import SobreNos from "./components/Sobre nós/SobreNos";
+import DescricaoDeProjetos from "./components/Descrição dos Projetos/DescricaoDeProjetos";
 
 createRoot(document.getElementById("root")).render(
   <Router>
@@ -33,6 +34,7 @@ createRoot(document.getElementById("root")).render(
         <Route path="/home" element={<ArmarioHome />} />
         <Route path="/perfil" element={<ArmarioPerfil />} />
         <Route path="/about-us" element={<SobreNos />}/>
+        <Route path="/project-description" element={<DescricaoDeProjetos />}/>
       </Route>
     </Routes>
   </Router>

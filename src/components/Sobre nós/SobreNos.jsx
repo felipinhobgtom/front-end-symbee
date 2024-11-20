@@ -23,18 +23,18 @@ function Card(props) {
 const SobreNos = () => {
   const funcoes = [
     {
-      name: "Felipe Viado",
+      name: "Felipe Barros",
       img: "./public/profile-icon.png",
       function: "UI/UX, Front-End,  Designer",
     },
     {
-      name: "BC",
+      name: "Beatriz Chagas",
       img: "./public/profile-icon-4.png",
       function: "Database,  Back-End",
     },
 
     {
-      name: "luiz lindo",
+      name: "luiz Miguel",
       img: "./public/profile-icon-2.png",
       function: "Full-stack, Social Media",
     },
@@ -50,12 +50,12 @@ const SobreNos = () => {
     },
 
     {
-      name: "vini malvadeza",
+      name: "vinius Mendes",
       img: "./public/profile-icon-3.png",
       function: "Scrum Master, Front-End",
     },
     {
-      name: "Guilherme Baleia",
+      name: "Guilherme Cruz",
       img: "./public/profile-icon-1.png",
       function: "Front-End, Financeiro, Social Media",
     },
