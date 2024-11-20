@@ -4,7 +4,9 @@ import iconeMenu from "./img/iconeMenuHamburguerBranco.png";
 import LogoNav from "./img/LogoNav.png";
 import { Route, useNavigate } from "react-router-dom";
 
-const NavBarResponsiva = () => {
+  const NavBarResponsiva = () => {
+
+  
   // Estado para controlar se o menu está aberto ou fechado
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
@@ -32,7 +34,7 @@ const NavBarResponsiva = () => {
           <div className="nav-list">
             <ul>
               <li className="nav-item">
-                <a href="#" className="nav-link">
+                <a href="/home" className="nav-link">
                   Início
                 </a>
               </li>
@@ -42,7 +44,7 @@ const NavBarResponsiva = () => {
                 </a>
               </li>
               <li className="nav-item">
-                <a href="#" className="nav-link">
+                <a href="about-us" className="nav-link">
                   Sobre
                 </a>
               </li>

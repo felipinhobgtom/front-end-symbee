@@ -35,7 +35,7 @@ function Home() {
             </div>
           </div>
 
-          <div className="statistics">
+          <div className="statisticsHome">
             <div className="dados">
               <div className="cartao">
                 <h2>Projetos</h2>

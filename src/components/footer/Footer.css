@@ -27,10 +27,7 @@
   margin: 20px 20px;
 }
 
-.logoFooterImg img {
-  width: 40px;
-  height: 45px;
-}
+
 
 .Point {
   display: flex;
@@ -91,7 +88,7 @@
 
 .FooterContents,
 a {
-  font-size: 10px;
+  font-size: 13px;
   text-decoration: none;
   color: #fff;
   font-weight: 300;
@@ -110,9 +107,9 @@ a {
 }
 
 .business {
-  margin-bottom: 60px;
+  margin-bottom: 70px;
 }
 
 .Diretorio {
-  margin-top: 22px;
+  margin-top: 28px;
 }

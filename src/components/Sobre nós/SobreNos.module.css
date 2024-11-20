@@ -1,0 +1,176 @@
+body{
+  background-size: 3%;
+  background-image: url("./img/Quadrado.png");
+  background-repeat: repeat;
+}
+
+
+
+.sectionAboutUs {
+  display: flex;
+  width: 100%;
+  height: 250vh;
+  flex-direction: column;
+
+
+
+
+
+  & .layoutAboutUs {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 5vh;
+    margin: auto;
+
+    & .titleAboutUs {
+      display: flex;
+      gap: 1vh;
+      align-items: center;
+      margin: 2vh;
+
+      & h1 {
+        font-size: 5vh;
+        font-weight: bold;
+      }
+
+      & #orangeSymbee {
+        font-size: 5vh;
+        font-weight: bold;
+        color: #ee9b11;
+      }
+    }
+
+    & .TeamAboutUs {
+      display: grid; /* Mudança para Grid */
+      width: 100%;
+      grid-template-columns: 1fr 1fr; /* Duas colunas */
+      gap: 4vh 5vh; /* Espaçamento entre as linhas e colunas */
+      padding: 0 5vh;
+
+      & .memberAndFunction {
+        display: flex;
+        align-items: center;
+        gap: 3vh;
+        margin: 0 10vh;
+
+        & .member {
+          display: flex;
+          flex-direction: row;
+          background-color: #1e1d1d;
+          border-radius: 100%;
+          width: 25vh; /* Tamanho reduzido para se adequar ao layout */
+          height: 25vh;
+          color: white;
+
+          & .imgAndName {
+            width: 100%;
+            height: 100%;
+            display: flex;
+            align-items: center;
+            gap: 1vh;
+            justify-content: center;
+            flex-direction: column;
+
+            & h2 {
+              position: relative;
+              top: -1vh;
+              font-size: 2vh;
+              text-align: center; /* Centraliza o texto abaixo da imagem */
+            }
+
+            & img {
+              width: 18vh;
+            }
+          }
+        }
+        & .function {
+          width: 50%;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+
+          & h2 {
+            display: flex;
+            align-items: center;
+            justify-content: flex-start;
+            width: 70%;
+            text-align: center;
+            font-size: 3vh;
+            font-weight: bold;
+            background-image: linear-gradient(
+              to bottom,
+              #81149e,
+              #a10288,
+              #b41373,
+              #bf2d62,
+              #c24555,
+              #c6514f,
+              #c95d4a,
+              #ca6946,
+              #d06f40,
+              #d67639,
+              #da7d31,
+              #dd8528
+            );
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+          }
+        }
+      }
+    }
+
+    & .MVV {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: center;
+      margin: 5vh;
+
+      & .conteudo {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        gap: 2vh;
+
+
+        & h2{
+          font-size: 5vh;
+          font-weight: 700;
+          color: #2800B1;
+        }
+
+        & p{
+          text-align: center;
+          font-size: 2vh;
+          width: 70%;
+          margin: auto;
+        }
+      }
+    }
+  }
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+  .sectionAboutUs .layoutAboutUs .TeamAboutUs {
+    grid-template-columns: 1fr; /* Uma coluna para telas pequenas */
+    gap: 6vh;
+  }
+
+  .sectionAboutUs .layoutAboutUs .TeamAboutUs .memberAndFunction {
+    flex-direction: column; /* Imagem acima do texto */
+    align-items: center;
+    text-align: center;
+  }
+
+  .sectionAboutUs .layoutAboutUs .TeamAboutUs .memberAndFunction .member {
+    width: 15vh;
+    height: 15vh;
+  }
+
+  .sectionAboutUs .layoutAboutUs .TeamAboutUs .memberAndFunction .function h2 {
+    font-size: 2vh;
+  }
+}

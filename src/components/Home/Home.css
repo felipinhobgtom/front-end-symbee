@@ -92,7 +92,7 @@
 
         & svg {
           position: relative;
-          right: 0.2vh;
+          
           width: 100%;
           height: 100%;
         }
@@ -167,7 +167,7 @@
       }
     }
 
-    & .statistics {
+    & .statisticsHome {
       display: flex;
       flex-direction: column;
       align-items: center;

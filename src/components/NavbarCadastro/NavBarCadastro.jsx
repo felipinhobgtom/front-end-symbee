@@ -24,7 +24,7 @@ const NavBarCadastro = () => {
             <div className="navListRegister">
               <ul>
                 <li className="navItemRegister">
-                  <a href="#" className="navLinkRegister">
+                  <a href="/" className="navLinkRegister">
                     Início
                   </a>
                 </li>
@@ -34,7 +34,7 @@ const NavBarCadastro = () => {
                   </a>
                 </li>
                 <li className="navItemRegister">
-                  <a href="#" className="navLinkRegister">
+                  <a href="/about-us" className="navLinkRegister">
                     Sobre
                   </a>
                 </li>
