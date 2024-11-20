@@ -4,6 +4,6 @@ import { ghPages } from "vite-plugin-gh-pages";
 
 // https://vitejs.dev/config/
 export default defineConfig({
-  base: "/symbee/",
+  base: "/",
   plugins: [react(), ghPages({branch: "main"})],
 });
