@@ -19,7 +19,7 @@ const Footer = (props) => {
           >
             <path
               d="M2.0283 30.6339L15.8962 23.1917L28.7075 30.8862V23.444L15.8962 16.254L1.5 23.6962V15.7494L15.8962 8.30713L29.5 16.5062"
-              stroke="#F9D504"
+              stroke="#EE9B11"
               stroke-width="3"
               stroke-linecap="round"
               stroke-linejoin="round"
