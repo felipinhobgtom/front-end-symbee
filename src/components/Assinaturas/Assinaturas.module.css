@@ -1,0 +1,44 @@
+.plansSection {
+  width: 95%;
+  margin: auto;
+  background-color: transparent;
+  padding: 5vh;
+
+  & h1 {
+    text-align: center;
+    font-size: 3rem;
+    margin: 3vh;
+    font-weight: 600;
+    color: black;
+  }
+
+  & .plansContainer {
+    display: flex;
+    flex-direction: row;
+    margin: 10vh;
+    justify-content: center;
+    gap: 10vh;
+
+    & .planWorker {
+      width: 90vh;
+      height: 50vh;
+      background-size: 7%;
+      background-image: url("./img/Quadradopt2.png");
+      background-color: #1e1d1d;
+      border-radius: 30px;
+      box-shadow: 5px 5px 10px gray;
+      
+    }
+
+    & .planQueen {
+      background-size: 10%;
+      background-image: url("./img/Quadradopt2.png");
+      background-color: #1e1d1d;
+      border-radius: 30px;
+      width: 60vh;
+      height: 80vh;
+      box-shadow: 5px 5px 10px gray;
+      
+    }
+  }
+}
