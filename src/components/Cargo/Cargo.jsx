@@ -4,17 +4,16 @@ import iconeSeta from "./img/iconeSeta.png";
 import { useNavigate } from "react-router-dom";
 
 const Cargo = () => {
-
-  const navegar = useNavigate()
+  const navegar = useNavigate();
   const handleEstudante = () => {
-    navegar('/estudante')
-  }
+    navegar("/estudante");
+  };
   const handleBio = () => {
-    navegar('/bio')
-  }
+    navegar("/bio");
+  };
   const handleBack = () => {
-    navegar('/profile-choice')
-  }
+    navegar("/profile-choice");
+  };
 
   return (
     <section>
@@ -34,7 +33,6 @@ const Cargo = () => {
             <div className="inputPosition">
               <input type="text" placeholder="Digite o cargo da empresa" />
             </div>{" "}
-            <p></p>
             Localização
             <div className="inputPosition">
               <input
