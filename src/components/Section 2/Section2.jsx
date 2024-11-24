@@ -20,16 +20,21 @@ function Section2() {
           <span className={styles.honey}>Desafiando-se;</span>
         </div>
       </div>
-      <div className={styles.ranking}>
-        <div className={styles.users_ranking}>
+      <div className={styles.users_ranking}>
+        <div className={styles.top}>
           <Num
             nome="Kay_bonjour"
             colocacao="1"
             stroke="#EE9B11"
-            dotColor="#F9D504"
+            dotColor="transparent"
             bg="#F9D504"
             color="#1e1d1d"
+            fonte='30px'
+            scale='1.5'
           />
+        </div>
+
+        <div className={styles.others}>
           <Num
             nome="KyanMaloca"
             colocacao="2"
