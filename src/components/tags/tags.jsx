@@ -1,5 +1,5 @@
 import { useNavigate } from "react-router-dom";
-import "./tags.css";
+import "./Tags.css";
 import React from "react";
 import Lupasvg from "./img/lupasvg";
 
